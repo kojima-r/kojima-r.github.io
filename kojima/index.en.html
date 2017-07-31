@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" href="assets/ico/favicon.png">
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+		<link href="assets/css/main.css" rel="stylesheet">
+		
+<!-- name -->
+		<title>Ryosuke Kojima's Page</title>
+<!-- up to here -->
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+			}
+			.container-fluid > .content{
+				margin-left:0px;
+			}
+			.categories li{
+				
+			}
+			.categories li:focus{
+				
+			}
+			#main-items tbody tr td{
+				cursor:pointer !important;
+			}
+			.highlight td{
+				font-weight:bold;
+			}
+			td.mini-thumbnail img{
+				max-height:50px;
+				max-width:100px;
+			}
+			td.mini-thumbnail{
+				text-align:center;
+			}
+			/* active */
+			.other_box h4 {
+				border-bottom: 3px solid #888;
+			}
+			.other_box h4.active .header{
+				width: 0;
+				height: 0;
+				margin-top:6px;
+				margin-right:6px;
+				margin-left:0px;
+				border: 6px solid transparent;
+				border-top: 6px solid #111;
+				float:left;
+			}
+			.other_box h4 .header{
+				width: 0;
+				height: 0;
+				margin-top:3px;
+				margin-right:3px;
+				margin-left:3px;
+				border: 6px solid transparent;
+				border-left: 6px solid #111;
+				float:left;
+			}
+			.bib_box{
+				margin-left:30px;
+			}
+			.bib_item{
+			list-style-type: none;
+			margin-bottom : 10px;
+			}
+			dt{  
+				width : 50px;
+				float : left;
+				clear : both;
+			}
+
+			dd{    
+				margin-left : 60px;
+			}
+			.ref{
+				font-weight:bold;
+			}
+		</style>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	</head>
+
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="http://www.cyb.mei.titech.ac.jp/nakadai/">
+					<img src="assets/img/logo.png" height="50">
+					</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="deactive"><a href="index.html">Japanese</a></li>
+						<li class="active"><a href="index.en.html">English</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	<div id="headerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+<!-- favorite phrase -->
+<!-- 				<h2> Something is wrong with the world </h2> -->
+<!-- up to here -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container wb">
+		<div class="row centered">
+			<div class="col-lg-4 col-lg-offset-2">
+<!-- profile -->
+				<h4>Ryosuke Kojima</h4>
+				<p>
+					Doctoral course student<br/>
+					Graduate School of Information Science and Engineering, Tokyo Institute of Technology.<br/>
+					Nakadai Lab.<br/>
+					Email: kojima[at]cyb.mei.titech.ac.jp<br/>
+				</p>
+			</div>
+			<div class="col-lg-4">
+<!-- my picture -->
+				<img class="img-circle" src="assets/img/user.jpg" height="200" width="200">
+			</div>
+		</div>
+	</div>
+	<div id="dg">
+		<div class="container">
+			<div class="row">
+			
+			
+<!-- bibtex for selected work. If you don't want to write this section, please delete from here to the next "up to here" comment -->
+<div id="dev" class="other_box">
+<h4 class="active">Development</h4>
+<ul>
+	<li>
+	Open-sourced robot audition software ：<a href="http://www.hark.jp/">HARK</a>
+	<ul>
+	<li>used in <span class="ref">[c1]</span> for sound source localization and separation</li>
+	<li>I'm a lecturer in the 11th and 12th HARK seminars</li>
+	</ul>
+	</li>
+	<li>
+	A probabilistic programming language：<a href="http://rjida.meijo-u.ac.jp/prism/">PRISM</a>
+	<ul>
+	<li>used in <span class="ref">[t1]</span> for probability computations on the hierarchical hidden Markov model (HHMM)</li>
+	<li>used in <span class="ref">[t2][t3]</span> for the prefix probability computation on the probabilistic context-free grammar (PCFG)</li>
+	<li>I'm a developer (ver. 2.2 or later)</li>
+	</ul>
+	</li>
+</ul>
+</div>
+
+<div id="journal" class="other_box">
+<h4 class="active"><div class="header"></div>Journal</h4>
+
+<textarea id="bibtex_journal" style="display:none;">
+
+@article{kojima2016multimodal,
+  title={Multimodal Scene Understanding Framework and Its Application to Cooking Recognition},
+  author={Kojima, Ryosuke and Sugiyama, Osamu and Nakadai, Kazuhiro},
+  journal={Applied Artificial Intelligence},
+  volume={30},
+  number={3},
+  pages={181--200},
+  year={2016},
+  publisher={Taylor \& Francis}
+}
+
+@incollection{kojima2015goal,
+  title={Goal and Plan Recognition via Parse Trees Using Prefix and Infix Probability Computation},
+  author={Kojima, Ryosuke and Sato, Taisuke},
+  booktitle={Inductive Logic Programming},
+  pages={76--91},
+  year={2015},
+  publisher={Springer},
+  url="http://link.springer.com/chapter/10.1007%2F978-3-319-23708-4_6"
+  
+}
+
+
+</textarea>
+<p id="bibtex_display_journal" class="text-left bib_box"></p>
+</div>
+
+<div id="conf" class="other_box">
+<h4 class="active"><div class="header"></div>Conference and workshop</h4>
+<textarea id="bibtex_conf" style="display:none;">
+
+@inproceedings{kojima2016iros,
+  title={Semi-Automatic Bird Song Analysis by Spatial-Cue-Based Integration of Sound Source Detection, Localization, Separation, and Identification},
+  author={Kojima, Ryosuke and Sugiyama, Osamu and Suzuki, Reiji and Nakadai, Kazuhiro and Taylor, Charles E.},
+  howpublished={Intelligent Robots and Systems (IROS), 2016 IEEE/RSJ International Conference on},
+  year={2016},
+  month={Oct.},
+  place={Daejeon},
+  organization={IEEE}
+}
+
+@inproceedings{kojima2015audio,
+  title={Audio-visual scene understanding utilizing text information for a cooking support robot},
+  author={Kojima, Ryosuke and Sugiyama, Osamu and Nakadai, Kazuhiro},
+  howpublished={Intelligent Robots and Systems (IROS), 2015 IEEE/RSJ International Conference on},
+  pages={4210--4215},
+  year={2015},
+  organization={IEEE},
+  month={Sep.},
+  place={Hamburg},
+  url="http://honda-ri.jp/publications/1160"
+}
+
+@inproceedings{Kojima_2015_1166,
+  title = {Scene understanding based on sound and text information for a cooking support robot},
+  author = {Kojima, Ryosuke and Sugiyama, Osamu and Nakadai, Kazuhiro},
+  year = {2015},
+  month = {Jun.},
+  howpublished = {Current Approaches in Applied Artificial Intelligence: 28th International Conference on Industrial, Engineering and Other Applications of Applied Intelligent Systems, IEA/AIE 2015, Seoul, South Korea},
+  pages = {665-674},
+  publisher = {Springer International Publishing},
+  url = {http://rd.springer.com/chapter/10.1007/978-3-319-19066-2_64},
+}
+
+@article{kojimagoal,
+  title={Goal recognition from incomplete action sequences by probabilistic grammars},
+  author={Kojima, Ryosuke and Sato, Taisuke},
+  howpublished={the 24th International Conference on Inductive Logic Programming(short paper)},
+  year={2014},
+  place={Nancy},
+  url="https://dtai.cs.kuleuven.be/events/ilp2014/p36.php",
+}
+
+
+
+@misc{kojimaprefix,
+  title={Prefix and infix probability computation in PRISM},
+  author={Kojima, Ryosuke and Sato, Taisuke},
+  howpublished={Probabilistic Logic Programming 2014, An ICLP workshop},
+  year={2014},
+  place={Vienna},
+  url = "http://stoics.org.uk/plp/plp2014/papers/",
+  slide = "http://stoics.org.uk/plp/slides/Kojima.pdf",
+}
+
+@misc{Kojima14med,
+  title={Analysis of Medical Records by Generative Models},
+  author={Kojima, R. and Sato, T.},
+  howpublished={Workshop on MDP/POMDP Applications to Medical Data},
+  year={2014},
+  place={Tokyo},
+  url = "\url{https://staff.aist.go.jp/h.asoh/medical-data/workshop.html}",
+}
+
+
+</textarea>
+<p id="bibtex_display_conf" class="text-left bib_box"></p>
+</div>
+
+
+<div id="conf2" class="other_box">
+<h4><div class="header"></div>Other conference and workshop</h4>
+<textarea id="bibtex_conf2" style="display:none;">
+
+@inproceedings{morito2016iros,
+  title={Partially Shared Deep Neural Network in Sound Source Separation and Identification Using a UAV-Embedded Microphone Array},
+  author={Morito, Takayuki and Sugiyama, Osamu and Kojima, Ryosuke and Nakadai, Kazuhiro},
+  booktitle={Intelligent Robots and Systems (IROS), 2016 IEEE/RSJ International Conference on},
+  year={2016},
+  organization={IEEE}
+}
+
+@inproceedings{morito16ieaaie,
+  author    = {Morito, Takayuki and
+               Sugiyama, Osamu  and
+               Uemura, Satoshi and
+               Kojima, Ryosuke and
+               Nakadai, Kazuhiro},
+  title     = {Reduction of Computational Cost Using Two-Stage Deep Neural Network
+               for Training for Denoising and Sound Source Identification},
+  booktitle = {Trends in Applied Knowledge-Based Systems and Data Science - 29th
+               International Conference on Industrial Engineering and Other Applications
+               of Applied Intelligent Systems, {IEA/AIE} 2016, Morioka, Japan, August
+               2-4, 2016, Proceedings},
+  pages     = {562--573},
+  year      = {2016},
+  url       = {http://dx.doi.org/10.1007/978-3-319-42007-3_49},
+  doi       = {10.1007/978-3-319-42007-3_49},
+}
+
+@inproceedings{Uemura_2015_1172,
+  title = {Outdoor Acoustic Event Identification using Sound Source Separation and Deep Learning with a Quadrotor-Embedded Microphone Array},
+  author = {Uemura, Satoshi and Sugiyama, Osamu and Kojima, Ryosuke and Nakadai, Kazuhiro},
+  year = {2015},
+  month = {Dec.},
+  booktitle = {The 6th International Conference on Advanced Mechatronics (ICAM2015)},
+  pages = {329-330},
+  abstract = {We present acoustic event identification by integration of sound source separation and deep learning based on a convolutional neural network for extremely noisy acoustics signals captured with a 16 ch microphone array embedded in an Unmanned Aerial Vehicle (UAV). We showed that the proposed method can identify over 98\% sound sources correctly for a 10 class classification task using 16 ch recorded sound data with a microphone array embedded in a quadrotor.},
+  publisher = {The Japan Society of Mechanical Engineers},
+  url="http://honda-ri.jp/publications/1172"
+}
+
+
+@inproceedings{sugiyama2015interactive,
+  title={Interactive interface to optimize sound source localization based on microphone array with coarse-to-fine tuning for humanoids},
+  author={Sugiyama, Osamu and Kojima, Ryosuke and Nakadai, Kazuhiro},
+  booktitle={Humanoid Robots (Humanoids), 2015 IEEE-RAS 15th International Conference on},
+  pages={825--830},
+  year={2015},
+  organization={IEEE}
+}
+
+@inproceedings{Sugiyama_2015_1167,
+  title = {Interactive Interface to Optimize Sound Source Localization with HARK},
+  author = {Sugiyama, Osamu and Kojima, Ryosuke and Nakadai, Kazuhiro},
+  year = {2015},
+  month = {Jun.},
+  booktitle = {Current Approaches in Applied Artificial Intelligence: 28th International Conference on Industrial, Engineering and Other Applications of Applied Intelligent Systems, IEA/AIE 2015, Seoul, South Korea},
+  pages = {262-271},
+  abstract = {In this study, we designed and developed an interactive inter-face to optimize sound source localization with the multi-channel robot audition software, HARK. With the developed interface, the system can lighten the loads of optimizing parameters and supports users easily to handle the parameter optimization in sound source localization. In order to properly handle the multi-channel sounds, it is better dynamically to indicate the parameter from both temporal and spatial perspectives, though almost all of the software can only indicate a static threshold. We developed an interactive interface, with which the user can create or delete the sound source on the MUSIC spectrum and can set up an ap-propriate parameter settings for the environment. We also conducted an evaluation of the software and revealed that our proposed interface was superior than that of the current HARK interface from the view points of intuitiveness and visibility.},
+  publisher = {Springer International Publishing},
+  url ="http://rd.springer.com/chapter/10.1007/978-3-319-19066-2_26",
+}
+
+</textarea>
+<p id="bibtex_display_conf2" class="text-left bib_box"></p>
+</div>
+
+
+<div id="award" class="other_box">
+<h4><div class="header"></div>Award</h4>
+<div id="bibtex_display_award" class="text-left bib_box">
+<ul>
+<li>Kojima, R. and Sato, T.:ILP 2014 Best Student Paper runner-up</li>
+</ul>
+</div>
+</div>
+
+<!-- up to here -->
+
+				<div class="bibtex_template">
+				<div class="bib_item">
+					<dt>[<span class="bib_id"></span>]</dt>
+						<dd>
+							<span class="if author"><span class="author"></span>:<br></span> 
+							<span class="title"></span>.<br>
+							<span class="if journal">In <span class="journal" style="font-style: italic;"></span>,</span> 
+							<span class="if howpublished"><span class="howpublished"></span>,</span> 
+							<span class="if booktitle"><span class="booktitle"></span>,</span> 
+							<span class="if publisher"><span class="publisher"></span>,</span> 
+							<span class="if school"><span class="school"></span></span> 
+							<span class="if volume"><span class="volume"></span>
+								<span class="if number">(<span class="number"></span>)</span>
+								<span class="if pages">:<span class="pages"></span></span>
+							</span> 
+							<span class="if edition"><span class="edition"></span> ed.,</span> 
+							<span class="if year"><span class="if month"><span class="month"></span>,</span>
+							<span class="year"></span>.<br></span>
+							<span class="if url"><a class="url"><span class="url"></span></a><br></span>
+							<span class="if draft">Draft/PDF: <a class="draft"><span class="draft"></span></a><br></span>
+							<span class="if slide">Slide: <a class="slide"><span class="slide"></span></a><br></span>
+						</dd>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+<!-- Twitter link -->
+				<a href="https://twitter.com/onuxy">
+					<i class="fa fa-twitter"></i>
+				</a>
+<!-- facebook link -->
+				<a href="https://www.facebook.com/ryosuke.kojima.509">
+					<i class="fa fa-facebook"></i>
+				</a>
+				<a href="#">
+					<i class="fa fa-dribbble"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="assets/js/bibtex_js_kojima.js"></script>
+	<script type="text/javascript">
+//Accordion
+(function($){
+	$(function(){
+		// journal
+		$('#journal').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_journal').slideToggle('slow');
+		});
+		$('#journal').find('h4').hover(function () {
+			$('#bibtex_display_journal').toggleClass('hovered');
+		});
+		// conf
+		$('#conf').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_conf').slideToggle('slow');
+		});
+		$('#conf').find('h4').hover(function () {
+			$('#bibtex_display_conf').toggleClass('hovered');
+		});
+		// conf2
+		$('#bibtex_display_conf2').hide();
+		$('#conf2').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_conf2').slideToggle('slow');
+		});
+		$('#conf2').find('h4').hover(function () {
+			$('#bibtex_display_conf2').toggleClass('hovered');
+		});
+		
+		// meeting
+		$('#bibtex_display_meeting').hide();
+		$('#meeting').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_meeting').slideToggle('slow');
+		});
+		$('#meeting').find('h4').hover(function () {
+			$('#bibtex_display_meeting').toggleClass('hovered');
+		});
+		// meeting2
+		$('#bibtex_display_meeting2').hide();
+		$('#meeting2').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_meeting2').slideToggle('slow');
+		});
+		$('#meeting2').find('h4').hover(function () {
+			$('#bibtex_display_meeting2').toggleClass('hovered');
+		});
+		// award
+		$('#bibtex_display_award').hide();
+		$('#award').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_award').slideToggle('slow');
+		});
+		$('#award').find('h4').hover(function () {
+			$('#bibtex_display_award').toggleClass('hovered');
+		});
+	});
+
+})(jQuery);
+</script>
+	</body>
+</html>

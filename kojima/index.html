@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" href="assets/ico/favicon.png">
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+		<link href="assets/css/main.css" rel="stylesheet">
+		
+<!-- ここを自分の名前に置き換えよう -->
+		<title>Ryosuke Kojima's Page</title>
+<!-- ここまで -->
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+			}
+			.container-fluid > .content{
+				margin-left:0px;
+			}
+			.categories li{
+				
+			}
+			.categories li:focus{
+				
+			}
+			#main-items tbody tr td{
+				cursor:pointer !important;
+			}
+			.highlight td{
+				font-weight:bold;
+			}
+			td.mini-thumbnail img{
+				max-height:50px;
+				max-width:100px;
+			}
+			td.mini-thumbnail{
+				text-align:center;
+			}
+			/* active */
+			.other_box h4 {
+				border-bottom: 3px solid #888;
+			}
+			.other_box h4.active .header{
+				width: 0;
+				height: 0;
+				margin-top:6px;
+				margin-right:6px;
+				margin-left:0px;
+				border: 6px solid transparent;
+				border-top: 6px solid #111;
+				float:left;
+			}
+			.other_box h4 .header{
+				width: 0;
+				height: 0;
+				margin-top:3px;
+				margin-right:3px;
+				margin-left:3px;
+				border: 6px solid transparent;
+				border-left: 6px solid #111;
+				float:left;
+			}
+			.bib_box{
+				margin-left:30px;
+			}
+			.bib_item{
+			list-style-type: none;
+			margin-bottom : 10px;
+			}
+			dt{  
+				width : 50px;
+				float : left;
+				clear : both;
+			}
+
+			dd{    
+				margin-left : 60px;
+			}
+			.ref{
+				font-weight:bold;
+			}
+		</style>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	</head>
+
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="http://www.cyb.mei.titech.ac.jp/nakadai/">
+					<img src="assets/img/logo.png" height="50">
+					</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">Japanese</a></li>
+						<li class="deactive"><a href="index.en.html">English</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	<div id="headerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+<!-- 適当に好きなフレーズに書き換えましょう。 -->
+<!-- 				<h2> Something is wrong with the world </h2> -->
+<!-- ここまで -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container wb">
+		<div class="row centered">
+			<div class="col-lg-4 col-lg-offset-2">
+<!-- 自分のプロフィールに書き換えよう -->
+				<h4>小島　諒介</h4>
+				<p>
+					東京工業大学大学院情報理工学研究科情報環境学専攻<br/>
+					中臺研究室 D3<br/>
+					Email: kojima[at]cyb.mei.titech.ac.jp<br/>
+				</p>
+			</div>
+			<div class="col-lg-4">
+<!-- assets/img/user.pngを自分の写真に置き換えよう -->
+				<img class="img-circle" src="assets/img/user.jpg" height="200" width="200">
+			</div>
+			<div class="col-lg-8 col-lg-offset-2">
+<!-- 自分用のメッセージに書き換えよう -->
+				<h4>ようこそ</h4>
+				<p>こんにちは。小島　諒介です。このページは、私のやってきたことを簡単にまとめています。
+				私は東京工業大学で修士時代に人工知能・機械学習・データマイニングの研究を行っていました．
+				現在は，音を中心とした環境の理解（音環境理解）に関する研究をしています．</p>
+				
+<!-- ここまで -->
+			</div>
+		</div>
+	</div>
+	
+	<div id="dg">
+		<div class="container">
+			<div class="row">
+<!-- ここのtextareaに代表的な自分の研究成果のbibtexを貼付けましょう．ない場合は，textareaの下の「 ここまで 」まで削除する． -->
+<div id="dev" class="other_box">
+<h4 class="active">開発</h4>
+<ul>
+	<li>
+	ロボット聴覚オープンソース・ソフトウェア：<a href="http://www.hark.jp/">HARK</a>
+	<ul>
+	<li>第11,12回HARK講習会　講師</li>
+	<li><span class="ref">[t1][c1]</span> にて音源定位・音源分離に利用</li>
+	</ul>
+	</li>
+	<li>
+	記号統計モデリングオープンソース・ソフトウェア：<a href="http://rjida.meijo-u.ac.jp/prism/">PRISM</a>
+	<ul>
+	<li>Ver. 2.2以降 開発メンバ</li>
+	<li><span class="ref">[t2]</span> にて階層隠れマルコフモデル HHMM の確率計算に利用</li>
+	<li><span class="ref">[t3][t4]</span> にて確率文脈自由文法 PCFG の Prefix 確率計算に利用</li>
+	</ul>
+	</li>
+</ul>
+</div>
+<div id="journal" class="other_box">
+<h4 class="active"><div class="header"></div>学術雑誌等</h4>
+
+<textarea id="bibtex_journal" style="display:none;">
+
+@article{kojima2017jrm,
+  title={Bird Song Scene Analysis Using a Spatial-Cue-Based Probabilistic Model},
+  author={Kojima, Ryosuke and Sugiyama, Osamu and Hoshiba, Kotaro and Nakadai, Kazuhiro and Suzuki, Reiji and Taylor, Charles E.},
+  journal={Journal of Robotics and Mechatronics},
+  volume={29},
+  number={1},
+  year={2017(accepted)},
+  publisher={Fujipress}
+}
+
+@article{kojima2016multimodal,
+  title={Multimodal Scene Understanding Framework and Its Application to Cooking Recognition},
+  author={Kojima, Ryosuke and Sugiyama, Osamu and Nakadai, Kazuhiro},
+  journal={Applied Artificial Intelligence},
+  volume={30},
+  number={3},
+  pages={181--200},
+  year={2016},
+  publisher={Taylor \& Francis}
+}
+
+@incollection{kojima2015goal,
+  title={Goal and Plan Recognition via Parse Trees Using Prefix and Infix Probability Computation},
+  author={Kojima, Ryosuke and Sato, Taisuke},
+  booktitle={Inductive Logic Programming},
+  pages={76--91},
+  year={2015},
+  publisher={Springer},
+  url="http://link.springer.com/chapter/10.1007%2F978-3-319-23708-4_6"
+  
+}
+
+@article{Kojima14C-D75,
+  title={アクセスログ分析における接頭部分列からのプラン認識},
+  author={小島 諒介 and 佐藤 泰介},
+  journal={人工知能学会論文誌},
+  volume={29},
+  number={3},
+  pages={301-310},
+  year={2014},
+  url = "https://www.jstage.jst.go.jp/article/tjsai/29/3/29_C-D75/_article",
+  doi={10.1527/tjsai.29.301}
+}
+
+
+
+@article{hoshiba2017jrm,
+  title={Design and Assessment of Sound Source Localization System with a UAV-embedded Microphone Array},
+  author={Kotaro Hoshiba and Osamu Sugiyama and Akihide Nagamine and Ryosuke Kojima and Makoto Kumon and Kazuhiro Nakadai},
+  journal={Journal of Robotics and Mechatronics},
+  volume={29},
+  number={1},
+  year={2017(accepted)},
+  publisher={Fujipress}
+}
+
+@article{ohata2017jrm,
+  title={Outdoor Sound Source Detection for a Quadrotor with a Microphone Array},
+  author={Takuma Ohata and Keisuke Nakamura and Akihide Nagamine and Takeshi Mizumoto and Takayuki Ishizaki and Ryosuke Kojima and Osamu Sugiyama and Kazuhiro Nakadai},
+  journal={Journal of Robotics and Mechatronics},
+  volume={29},
+  number={1},
+  year={2017(accepted)},
+  publisher={Fujipress}
+}
+
+
+@article{Matsubayashi2017jrm,
+  title={Acoustic monitoring of the great reed warbler using multiple microphone arrays and robot audition},
+  author={Shiho Matsubayashi and Reiji Suzuki and Fumiyuki Saito and Tatsuyoshi Murate and Tomohisa Masuda and Koichi Yamamoto and Ryosuke Kojima and Kazuhiro Nakadai and Hiroshi G. Okuno},
+  journal={Journal of Robotics and Mechatronics},
+  volume={29},
+  number={1},
+  year={2017(accepted)},
+  publisher={Fujipress}
+}
+
+
+
+</textarea>
+<p id="bibtex_display_journal" class="text-left bib_box"></p>
+</div>
+
+<div id="conf" class="other_box">
+<h4 class="active"><div class="header"></div>国際会議・国際ワークショップ</h4>
+<textarea id="bibtex_conf" style="display:none;">
+
+@inproceedings{kojima2016iros,
+  title={Semi-Automatic Bird Song Analysis by Spatial-Cue-Based Integration of Sound Source Detection, Localization, Separation, and Identification},
+  author={Kojima, Ryosuke and Sugiyama, Osamu and Suzuki, Reiji and Nakadai, Kazuhiro and Taylor, Charles E.},
+  howpublished={Intelligent Robots and Systems (IROS), 2016 IEEE/RSJ International Conference on},
+  year={2016},
+  month={Oct.},
+  place={Daejeon},
+  organization={IEEE}
+}
+
+@inproceedings{kojima2015audio,
+  title={Audio-visual scene understanding utilizing text information for a cooking support robot},
+  author={Kojima, Ryosuke and Sugiyama, Osamu and Nakadai, Kazuhiro},
+  howpublished={Intelligent Robots and Systems (IROS), 2015 IEEE/RSJ International Conference on},
+  pages={4210--4215},
+  year={2015},
+  organization={IEEE},
+  month={Sep.},
+  place={Hamburg},
+  url="http://honda-ri.jp/publications/1160"
+}
+
+@inproceedings{Kojima_2015_1166,
+  title = {Scene understanding based on sound and text information for a cooking support robot},
+  author = {Kojima, Ryosuke and Sugiyama, Osamu and Nakadai, Kazuhiro},
+  year = {2015},
+  month = {Jun.},
+  howpublished = {Current Approaches in Applied Artificial Intelligence: 28th International Conference on Industrial, Engineering and Other Applications of Applied Intelligent Systems, IEA/AIE 2015, Seoul, South Korea},
+  pages = {665-674},
+  publisher = {Springer International Publishing},
+  url = {http://rd.springer.com/chapter/10.1007/978-3-319-19066-2_64},
+}
+
+@article{kojimagoal,
+  title={Goal recognition from incomplete action sequences by probabilistic grammars},
+  author={Kojima, Ryosuke and Sato, Taisuke},
+  howpublished={the 24th International Conference on Inductive Logic Programming(short paper)},
+  year={2014},
+  place={Nancy},
+  url="https://dtai.cs.kuleuven.be/events/ilp2014/p36.php",
+}
+
+
+
+@misc{kojimaprefix,
+  title={Prefix and infix probability computation in PRISM},
+  author={Kojima, Ryosuke and Sato, Taisuke},
+  howpublished={Probabilistic Logic Programming 2014, An ICLP workshop},
+  year={2014},
+  place={Vienna},
+  url = "http://stoics.org.uk/plp/plp2014/papers/",
+  slide = "http://stoics.org.uk/plp/slides/Kojima.pdf",
+}
+
+@misc{kojimagoal,
+  title={Multimodal scene understanding using CNN and hierarchical HMM for a cooking support robot},
+  author = {Kojima, Ryosuke and Sugiyama, Osamu and Nakadai, Kazuhiro},
+  howpublished={Machine Learning Summer School},
+  year={2015},
+  place={Kyoto}
+}
+
+@misc{Kojima14med,
+  title={Analysis of Medical Records by Generative Models},
+  author={Kojima, R. and Sato, T.},
+  howpublished={Workshop on MDP/POMDP Applications to Medical Data},
+  year={2014},
+  place={Tokyo},
+  url = "\url{https://staff.aist.go.jp/h.asoh/medical-data/workshop.html}",
+}
+
+
+</textarea>
+<p id="bibtex_display_conf" class="text-left bib_box"></p>
+</div>
+
+
+<div id="conf2" class="other_box">
+<h4><div class="header"></div>そのほかの国際会議・国際ワークショップ</h4>
+<textarea id="bibtex_conf2" style="display:none;">
+
+@inproceedings{morito2016iros,
+  title={Partially Shared Deep Neural Network in Sound Source Separation and Identification Using a UAV-Embedded Microphone Array},
+  author={Morito, Takayuki and Sugiyama, Osamu and Kojima, Ryosuke and Nakadai, Kazuhiro},
+  booktitle={Intelligent Robots and Systems (IROS), 2016 IEEE/RSJ International Conference on},
+  year={2016},
+  organization={IEEE}
+}
+
+@inproceedings{morito16ieaaie,
+  author    = {Morito, Takayuki and
+               Sugiyama, Osamu  and
+               Uemura, Satoshi and
+               Kojima, Ryosuke and
+               Nakadai, Kazuhiro},
+  title     = {Reduction of Computational Cost Using Two-Stage Deep Neural Network
+               for Training for Denoising and Sound Source Identification},
+  booktitle = {Trends in Applied Knowledge-Based Systems and Data Science - 29th
+               International Conference on Industrial Engineering and Other Applications
+               of Applied Intelligent Systems, {IEA/AIE} 2016, Morioka, Japan, August
+               2-4, 2016, Proceedings},
+  pages     = {562--573},
+  year      = {2016},
+  url       = {http://dx.doi.org/10.1007/978-3-319-42007-3_49},
+  doi       = {10.1007/978-3-319-42007-3_49},
+}
+
+@inproceedings{Uemura_2015_1172,
+  title = {Outdoor Acoustic Event Identification using Sound Source Separation and Deep Learning with a Quadrotor-Embedded Microphone Array},
+  author = {Uemura, Satoshi and Sugiyama, Osamu and Kojima, Ryosuke and Nakadai, Kazuhiro},
+  year = {2015},
+  month = {Dec.},
+  booktitle = {The 6th International Conference on Advanced Mechatronics (ICAM2015)},
+  pages = {329-330},
+  abstract = {We present acoustic event identification by integration of sound source separation and deep learning based on a convolutional neural network for extremely noisy acoustics signals captured with a 16 ch microphone array embedded in an Unmanned Aerial Vehicle (UAV). We showed that the proposed method can identify over 98\% sound sources correctly for a 10 class classification task using 16 ch recorded sound data with a microphone array embedded in a quadrotor.},
+  publisher = {The Japan Society of Mechanical Engineers},
+  url="http://honda-ri.jp/publications/1172"
+}
+
+
+@inproceedings{sugiyama2015interactive,
+  title={Interactive interface to optimize sound source localization based on microphone array with coarse-to-fine tuning for humanoids},
+  author={Sugiyama, Osamu and Kojima, Ryosuke and Nakadai, Kazuhiro},
+  booktitle={Humanoid Robots (Humanoids), 2015 IEEE-RAS 15th International Conference on},
+  pages={825--830},
+  year={2015},
+  organization={IEEE}
+}
+
+@inproceedings{Sugiyama_2015_1167,
+  title = {Interactive Interface to Optimize Sound Source Localization with HARK},
+  author = {Sugiyama, Osamu and Kojima, Ryosuke and Nakadai, Kazuhiro},
+  year = {2015},
+  month = {Jun.},
+  booktitle = {Current Approaches in Applied Artificial Intelligence: 28th International Conference on Industrial, Engineering and Other Applications of Applied Intelligent Systems, IEA/AIE 2015, Seoul, South Korea},
+  pages = {262-271},
+  abstract = {In this study, we designed and developed an interactive inter-face to optimize sound source localization with the multi-channel robot audition software, HARK. With the developed interface, the system can lighten the loads of optimizing parameters and supports users easily to handle the parameter optimization in sound source localization. In order to properly handle the multi-channel sounds, it is better dynamically to indicate the parameter from both temporal and spatial perspectives, though almost all of the software can only indicate a static threshold. We developed an interactive interface, with which the user can create or delete the sound source on the MUSIC spectrum and can set up an ap-propriate parameter settings for the environment. We also conducted an evaluation of the software and revealed that our proposed interface was superior than that of the current HARK interface from the view points of intuitiveness and visibility.},
+  publisher = {Springer International Publishing},
+  url ="http://rd.springer.com/chapter/10.1007/978-3-319-19066-2_26",
+}
+
+</textarea>
+<p id="bibtex_display_conf2" class="text-left bib_box"></p>
+</div>
+
+<div id="meeting" class="other_box">
+<h4><div class="header"></div>国内学会・国内ワークショップ・研究会等</h4>
+<textarea id="bibtex_meeting" style="display:none;">
+
+
+@misc{kojima2016kiban_s,
+  title = {マイクロフォンアレイを利用した確率的環境理解フレームワーク},
+  author = {小島 諒介},
+  howpublished={基盤研究（S）「ロボット聴覚の実環境理解に向けた多面的展開」最終シンポジウム},
+  year = {2016},
+  month = {Dec.},
+  place={東京},
+  url="http://www.leading-sn.waseda.ac.jp/info/news/RobotAuditionFinalSymp-2016/"
+}
+
+
+@inproceedings{kojima2016sig_challenge,
+  title = {空間情報を用いた鳥の歌分析},
+  author = {小島 諒介 and 杉山 治 and 干場 功太郎 and 鈴木 麗璽 and 中臺 一博},
+  year = {2016},
+  month = {Nov.},
+  booktitle = {人工知能学会 第46回 AI-Challenge 研究会},
+  pages = {25-31},
+  publisher = {人工知能学会},
+  url="http://www.osaka-kyoiku.ac.jp/~challeng/SIG-Challenge-046/index.html"
+}
+
+
+
+@inproceedings{Kojima2016,
+title = {音源位置を考慮した音源同定のための確率モデルとその学習},
+author = {小島 諒介 and 杉山 治 and 鈴木 麗璽 and 中臺 一博},
+yomi = {こじま りょうすけ and すぎやま おさむ and すずき れいじ and なかだい かずひろ},
+year = {2016},
+booktitle = {RSJ2016},
+publisher = {日本ロボット学会}
+}
+
+@inproceedings{Kojima_2015_1149,
+  title = {音源アノテーション補助のための音源位置を考慮した同定モデル},
+  author = {小島 諒介 and 杉山 治 and 鈴木 麗璽 and 中臺 一博},
+  yomi = {こじま りょうすけ and すぎやま おさむ and すずき れいじ and なかだい かずひろ},
+  year = {2015},
+  month = {Sep.},
+  booktitle = {第33回日本ロボット学会学術講演会 (RSJ2015)},
+  publisher = {日本ロボット学会},
+  url="http://honda-ri.jp/publications/1149"
+}
+
+
+@inproceedings{Kojima_2014_1108,
+  title = {調理認識を対象としたレシピの確率モデルとその学習},
+  author = {小島 諒介 and 杉山 治 and 中臺 一博},
+  yomi = {こじま りょうすけ and すぎやま おさむ and なかだい かずひろ},
+  year = {2014},
+  month = {Dec.},
+  booktitle = {第15回計測自動制御学会システムインテグレーション部門講演会},
+  pages = {1214-1219},
+  publisher = {計測自動制御学会},
+  url="http://honda-ri.jp/publications/1108"
+}
+
+@inproceedings{Kojima_2014_1092,
+  title = {調理支援のための音情報を用いた料理レシピの推定},
+  author = {小島 諒介 and 杉山 治 and 中臺 一博},
+  yomi = {こじま りょうすけ and すぎやま おさむ and なかだい かずひろ},
+  year = {2014},
+  month = {Sep.},
+  booktitle = {第32回日本ロボット学会学術講演会（RSJ2014）},
+  publisher = {日本ロボット学会},
+  url="http://honda-ri.jp/publications/1092"
+}
+
+@misc{Kojima13pre,
+  title={Prefix確率を用いたプラン認識のWebアクセスログ解析への応用},
+  author={小島諒介 and 佐藤泰介},
+  howpublished={第3回CSPSAT2研究会(2013)},
+  year={2013},
+  place={札幌},
+  url = "http://www.edu.kobe-u.ac.jp/istc-tamlab/cspsat/mtg203/",
+}
+
+@article{Kojima13naive,
+  title={Naive Bayes モデルを用いた効率的なクラスタラベリング手法 (特集 「Big data と機械学習・データサイエンス」 および一般)},
+  author={小島諒介 and 亀谷由隆 and 佐藤泰介},
+  journal={人工知能基本問題研究会},
+  volume={88},
+  pages={19--24},
+  year={2013},
+  publisher={人工知能学会},
+  draft = "http://rjida.meijo-u.ac.jp/sato-www/reference/Kojima-fpai88.pdf"
+}
+
+@article{KojimaVH,
+  title={VisualHaptics 2.0: 感触の解像度向上とタッチパネルへの応用},
+  author={小島 諒介 and 渡邊 恵太 and 稲見 昌彦 and 五十嵐 健夫},
+  journal={インタラクション},
+  pages={257--260},
+  year={2013}
+}
+
+</textarea>
+<p id="bibtex_display_meeting" class="text-left bib_box"></p>
+</div>
+
+
+<div id="meeting2" class="other_box">
+<h4><div class="header"></div>そのほかの国内学会・国内ワークショップ・研究会等</h4>
+<textarea id="bibtex_meeting2" style="display:none;">
+
+
+
+@misc{nakadai2016si,
+  title = {HARK 2.3 の紹介とタフロボティクスチャレンジへの展開},
+  author = {中臺 一博, 坂東 宜昭,水本 武志, 干場 功太郎, 小島 諒介, 糸山 克寿, 杉山 治, 公文 誠, 奥乃 博},
+  howpublished={第17回計測自動制御学会システムインテグレーション部門講演会 (SI2016)},
+  year = {2016},
+  month = {Dec.},
+  place={札幌},
+}
+
+
+@inproceedings{hoshiba2016rsj,
+title = {UAV搭載マイクロホンアレイを用いた音源探査の実環境評価},
+author = {干場 功太郎 and 小島 諒介 and 杉山 治 and 中臺 一博},
+yomi = {ほしば こうたろう and こじま りょうすけ and すぎやま おさむ and なかだい かずひろ},
+year = {2016},
+booktitle = {RSJ2016},
+publisher = {日本ロボット学会}
+}
+
+
+@inproceedings{sugiyama2016sig_challenge,
+  title = {UAV 搭載マイクアレイを用いた高雑音環境下における音イベント検出・識別の並列最適化},
+  author = {杉山 治 and 小島 諒介 and 中臺 一博},
+  year = {2016},
+  month = {Nov.},
+  booktitle = {人工知能学会 第46回 AI-Challenge 研究会},
+  pages = {32-36},
+  publisher = {人工知能学会},
+  url="http://www.osaka-kyoiku.ac.jp/~challeng/SIG-Challenge-046/index.html"
+}
+
+@inproceedings{sugiyama2016robomech,
+  title = {UAV搭載マイクアレイを用いた高雑音環境下における音イベント検出・識別システム},
+  author = {杉山 治 and 上村 知史 and 小島 諒介 and 中臺 一博},
+  yomi = {すぎやま おさむ and うえむら さとし and こじま りょうすけ and なかだい かずひろ},
+  year = {2016},
+  month = {June},
+  booktitle = {ロボティクス・メカトロニクス講演会 ROBOMECH2016},
+  publisher = {日本機械学会}
+}
+
+@inproceedings{Sugiyama_2015_1211,
+  title = {Coarse-to-Fine チューニングを用いたHARK の音源定位パラメータの最適化},
+  author = {杉山 治 and 小島 諒介 and 中臺 一博},
+  yomi = {すぎやま おさむ and こじま りょうすけ and なかだい かずひろ},
+  year = {2015},
+  month = {Nov.},
+  booktitle = {人工知能学会 第43回 AI-Challenge 研究会},
+  pages = {17-22},
+  abstract = {本稿ではオープンソースロボット聴覚ソフトウェアHARK (Honda Research Institute Japan Audition for Robots with Kyoto University) の音源定位におけるパラメータ最適化のためのインタフェースを提案する. HARK でパラメータ調整用のインタフェースは存在するものの，HARKに熟練していてもそのパラメータの最適化には時間を要する．本稿で提案するインタフェースは，HARK のパラメータ最適化における課題を，可視化，操作，最適化における課題に分類し，それぞれを解決する機能を設計・実装した．そして，ユーザ評価において，可視化性・設定の柔軟さの点で，従来のインタフェースを上回るという結果を得た．},
+  publisher = {人工知能学会},
+  url="http://honda-ri.jp/publications/1211"
+}
+
+@inproceedings{Sugiyama_2015_1148,
+  title = {Coarse-to-fine チューニングに基づく HARK を用いた 音源定位パラメータ最適化インタフェースの提案},
+  author = {杉山 治 and 小島 諒介 and 中臺 一博},
+  yomi = {すぎやま おさむ and こじま りょうすけ and なかだい かずひろ},
+  year = {2015},
+  month = {Sep.},
+  booktitle = {第33回日本ロボット学会学術講演会 (RSJ2015)},
+  publisher = {日本ロボット学会},
+  url="http://honda-ri.jp/publications/1148"
+}
+
+@inproceedings{Sugiyama_2014_1109,
+  title = {ユーザとの対話に基づきブログを自動生成するブログロボットの提案},
+  author = {杉山 治 and 小島 諒介 and 中臺 一博},
+  yomi = {すぎやま おさむ and こじま りょうすけ and なかだい かずひろ},
+  year = {2014},
+  month = {Dec.},
+  booktitle = {第15回計測自動制御学会システムインテグレーション部門講演会},
+  pages = {1400-1403},
+  abstract = {This paper describes the development of the blog robot, which generates the sentence describing contents of the
+  interaction with its users. The unique point of this study is that the developed system not only utters the response toward the
+  users, but also provides users the sentence describing its understanding of the interaction. We also conducted an impression
+  evaluation, and verified that the developed prototype system of the blog robot exceeded the impression of one of chatter
+  robot implementations.},
+  publisher = {計測自動制御学会},
+  url="http://honda-ri.jp/publications/1107"
+}
+
+
+@inproceedings{Sugiyama_2014_1091,
+  title = {音環境理解ロボットを対象とした環境音識別器のための協調型インタフェースの提案},
+  author = {杉山 治 and 小島 諒介 and 中臺 一博},
+  yomi = {すぎやま おさむ and こじま りょうすけ and なかだい かずひろ},
+  year = {2014},
+  month = {Sep.},
+  booktitle = {第32回日本ロボット学会学術講演会（RSJ2014）},
+  publisher = {日本ロボット学会},
+  url="http://honda-ri.jp/publications/1091"
+}
+
+@inproceedings{Matsubayashi_2015_1219,
+  title = {複数のマイクロフォンアレイで測る野鳥の位置},
+  author = {松林 志保 and 小島 諒介 and 中臺 一博 and 鈴木 麗璽},
+  yomi = {まつばやし しほ and こじま りょうすけ and なかだい かずひろ and すずき れいじ},
+  year = {2015},
+  month = {Nov.},
+  booktitle = {第10回バードリサーチ大会},
+  abstract = {複数のマイクで構成されるデバイスであるマイクロホンアレイを用いて音源の方向や位置を定位したり、定位した音源を分離する技術が急速に発展している。この技術の野鳥研究への応用は、従来の単一のマイクによる録音と比べてより豊富な生態情報の記録を可能にするため、生態理解へ大きな貢献を果たすことが期待される。本稿では複数のマイクロホンアレイから得られる音源の方角を総合することで、音源を定位できる可能性を示した。},
+  publisher = {認定NPO法人 バードリサーチ},
+  address = {名古屋大学},
+  url="http://honda-ri.jp/publications/1219"
+}
+
+@inproceedings{Matsubayashi_2015_1218,
+  title = {複数のマイクロフォンアレイとロボット聴覚ソフトウェアHARK を用いた野鳥の位置観測精度の検討},
+  author = {松林 志保 and 鈴木 麗璽 and 小島 諒介 and 中臺 一博},
+  yomi = {まつばやし しほ and すずき れいじ and こじま りょうすけ and なかだい かずひろ},
+  year = {2015},
+  month = {Nov.},
+  booktitle = {人工知能学会 第43回 AI-Challenge 研究会},
+  pages = {54-59},
+  abstract = {本研究は、３つのマイクロフォンアレイとロボット聴覚ソフトウェアHARK を用いた野鳥の観測精度に関する予備的調査の結果を報告する。1 つ目の調査では、愛知県豊田市の森林内でスピーカーからの鳥の歌の再生音を用いてHARK による定位精度の検討を行った。2 つ目の調査では、人間による野鳥の観測結果とHARK により定位された野鳥の位置を比較し、その定位精度を調べた。},
+  publisher = {人工知能学会},
+  url="http://honda-ri.jp/publications/1218"
+}
+
+@inproceedings{Matsubayashi_2015_1215,
+  title = {複数のマイクロホンアレイによる野鳥の位置観測精度の検討},
+  author = {松林 志保 and 小島 諒介 and 中臺 一博 and 鈴木 麗璽},
+  yomi = {まつばやし しほ and こじま りょうすけ and なかだい かずひろ and すずき れいじ},
+  year = {2015},
+  month = {Sep.},
+  booktitle = {日本鳥学会2015年度大会},
+  address = {兵庫県立大学神戸商科キャンパス},
+  url="http://honda-ri.jp/publications/1215"
+}
+
+@inproceedings{morito2016sig_challenge,
+  title = {部分共有アーキテクチャを用いた深層学習ベースの音源同定の検討},
+  author = {森戸 隆之 and 杉山 治 and 小島 諒介 and 中臺 一博},
+  year = {2016},
+  month = {Nov.},
+  booktitle = {人工知能学会 第46回 AI-Challenge 研究会},
+  pages = {12-17},
+  publisher = {人工知能学会},
+  url="http://www.osaka-kyoiku.ac.jp/~challeng/SIG-Challenge-046/index.html"
+}
+
+@inproceedings{morito2016robomech,
+  title = {部分共有型Deep Neural Network を用いた音源同定},
+  author = {森戸 隆之 and 杉山 治 and 小島 諒介 and 中臺 一博},
+  yomi = {もりと たかゆき and すぎやま おさむ and こじま りょうすけ and なかだい かずひろ},
+  year = {2016},
+  month = {June},
+  booktitle = {ロボティクス・メカトロニクス講演会 ROBOMECH2016},
+  publisher = {日本機械学会}
+}
+
+@inproceedings{Morito_2015_1170,
+  title = {深層学習による多チャネル音響信号に対する音源同定の検討},
+  author = {森戸 隆之 and 杉山 治 and 上村 知史 and 小島 諒介 and 中臺 一博},
+  yomi = {もりと たかゆき and すぎやま おさむ and うえむら さとし and こじま りょうすけ and なかだい かずひろ},
+  year = {2015},
+  month = {Dec.},
+  booktitle = {第16回 公益社団法人 計測自動制御学会 システムインテグレーション部門 講演会 SI2015},
+  pages = {1263-1266},
+  abstract = {This paper addresses deep sound source identification for sound captured with a microphone array embedded in a quadrotor. Since such sound is highly contaminated by wind and propellers{\textquoteright} noise, we propose to apply a deep learning technique directly to multi-channel audio signals for sound source identification. The proposed method showed 70\% - 75\% sound source identification rates.},
+  publisher = {公益社団法人 計測自動制御学会},
+  url="http://honda-ri.jp/publications/1170"
+}
+
+@inproceedings{Uemura_2015_1171,
+  title = {UAV を用いた屋外音環境理解における音源検出・識別の評価},
+  author = {上村 知史 and 杉山 治 and 小島 諒介 and 中臺 一博},
+  yomi = {うえむら さとし and すぎやま おさむ and こじま りょうすけ and なかだい かずひろ},
+  year = {2015},
+  month = {Dec.},
+  booktitle = {第16回 公益社団法人 計測自動制御学会 システムインテグレーション部門 講演会 SI2015},
+  pages = {2309-2313},
+  abstract = {This paper assesses an outdoor auditory scene analysis system which includes sound source detection and sound source identification using a quadrotor with a microphone array. We introduced event-based metrics as well as conventional frame-based ones, and disclosed system properties which give important ques for system optimization.},
+  publisher = {公益社団法人 計測自動制御学会},
+  url="http://honda-ri.jp/publications/1171"
+}
+
+@inproceedings{Uemura_2015_1150,
+  title = {クアドロコプタ搭載マイクロホンアレイを用いた 音源分離と深層学習による音源識別},
+  author = {上村 知史 and 杉山 治 and 小島 諒介 and 中臺 一博},
+  yomi = {うえむら さとし and すぎやま おさむ and こじま りょうすけ and なかだい かずひろ},
+  year = {2015},
+  month = {Sep.},
+  booktitle = {第33回日本ロボット学会学術講演会 (RSJ2015)},
+  publisher = {日本ロボット学会},
+  url="http://honda-ri.jp/publications/1150"
+}
+
+@inproceedings{Uemura_2014_1107,
+  title = {クアドロコプタ搭載マイクロホンアレイを用いた深層学習による音声識別},
+  author = {上村 知史 and 杉山 治 and 小島 諒介 and 大畑 琢磨 and 中臺 一博},
+  yomi = {うえむら さとし and すぎやま おさむ and こじま りょうすけ and おおはた たくま and なかだい かずひろ},
+  year = {2014},
+  month = {Dec.},
+  booktitle = {第15回計測自動制御学会システムインテグレーション部門講演会},
+  pages = {1016-1020},
+  abstract = {This paper addresses speech detection from various sound sources which are captured with a micro-
+  phone array embedded in a quadrotor. Although the use of a quadrotor is promising to find a person , it is tough
+  to deal with noise produced by wind and propellers. We propose speech identification based on a deep learning
+  technique. The proposed method showed 70\%-80\% speech detection rates.},
+  publisher = {計測自動制御学会},
+  url="http://honda-ri.jp/publications/1107"
+}
+
+
+@inproceedings{Nagamine_2014_1102,
+  title = {屋外音環境理解における音源検出の性能評価と可視化},
+  author = {長峰 諒英 and 大畑 琢磨 and 上村 知史 and 小島 諒介 and 杉山 治 and 中村 圭佑 and 中臺 一博},
+  yomi = {ながみね あきひで and おおはた たくま and うえむら さとし and こじま りょうすけ and すぎやま おさむ and なかむら けいすけ and なかだい かずひろ},
+  year = {2014},
+  month = {Nov.},
+  booktitle = {第41回人工知能学会 AI チャレンジ研究会},
+  pages = {13-19},
+  publisher = {人工知能学会},
+  url="http://honda-ri.jp/publications/1102"
+}
+
+</textarea>
+<p id="bibtex_display_meeting2" class="text-left bib_box"></p>
+</div>
+
+<div id="patent" class="other_box">
+<h4><div class="header"></div>特許</h4>
+<div id="bibtex_display_patent" class="text-left bib_box">
+<ul><li>小島 諒介，中臺一博: “環境理解装置および環境理解方法”特開2016-51052</li></ul>
+</div>
+</div>
+
+<div id="award" class="other_box">
+<h4><div class="header"></div>受賞</h4>
+<div id="bibtex_display_award" class="text-left bib_box">
+<ul>
+<li>小島諒介，杉山治, 中臺一博: 第３３回日本ロボット学会研究奨励賞</li>
+<li>松林志保，鈴木麗璽，小島諒介，中臺一博: 第43回AIチャレンジ研究会優秀賞</li>
+<li>小島諒介，杉山治, 中臺一博: SI 2014 優秀講演者賞</li>
+<li>Kojima, R. and Sato, T.:ILP 2014 Best Student Paper runner-up</li>
+</ul>
+</div>
+</div>
+<!-- ここまで -->
+
+				<div class="bibtex_template">
+				<div class="bib_item">
+					<dt>[<span class="bib_id"></span>]</dt>
+						<dd>
+							<span class="if author"><span class="author"></span>:<br></span> 
+							<span class="title"></span>.<br>
+							<span class="if journal">In <span class="journal" style="font-style: italic;"></span>,</span> 
+							<span class="if howpublished"><span class="howpublished"></span>,</span> 
+							<span class="if booktitle"><span class="booktitle"></span>,</span> 
+							<span class="if publisher"><span class="publisher"></span>,</span> 
+							<span class="if school"><span class="school"></span></span> 
+							<span class="if volume">Vol. <span class="volume"></span>
+								<span class="if number">No. <span class="number"></span></span>
+								<span class="if pages">pp. <span class="pages"></span></span>,
+							</span> 
+							<span class="if edition"><span class="edition"></span> ed.,</span> 
+							<span class="if year"><span class="if month"><span class="month"></span>,</span>
+							<span class="year"></span>.<br></span>
+							<span class="if url"><a class="url"><span class="url"></span></a><br></span>
+							<span class="if draft">Draft/PDF: <a class="draft"><span class="draft"></span></a><br></span>
+							<span class="if slide">Slide: <a class="slide"><span class="slide"></span></a><br></span>
+						</dd>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+<!-- 自分のTwitterページのリンクに書き換えよう。（したくない場合はhrefの値を#にしましょう） -->
+				<a href="https://twitter.com/onuxy">
+					<i class="fa fa-twitter"></i>
+				</a>
+<!-- 自分のFacebookページのリンクに書き換えよう。（したくない場合はhrefの値を#にしましょう） -->
+				<a href="https://www.facebook.com/ryosuke.kojima.509">
+					<i class="fa fa-facebook"></i>
+				</a>
+				<a href="#">
+					<i class="fa fa-dribbble"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="assets/js/bibtex_js_kojima.js"></script>
+		
+		<script type="text/javascript">
+//Accordion
+(function($){
+	$(function(){
+		// journal
+		$('#journal').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_journal').slideToggle('slow');
+		});
+		$('#journal').find('h4').hover(function () {
+			$('#bibtex_display_journal').toggleClass('hovered');
+		});
+		// conf
+		$('#conf').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_conf').slideToggle('slow');
+		});
+		$('#conf').find('h4').hover(function () {
+			$('#bibtex_display_conf').toggleClass('hovered');
+		});
+		// conf2
+		$('#bibtex_display_conf2').hide();
+		$('#conf2').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_conf2').slideToggle('slow');
+		});
+		$('#conf2').find('h4').hover(function () {
+			$('#bibtex_display_conf2').toggleClass('hovered');
+		});
+		
+		// meeting
+		$('#bibtex_display_meeting').hide();
+		$('#meeting').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_meeting').slideToggle('slow');
+		});
+		$('#meeting').find('h4').hover(function () {
+			$('#bibtex_display_meeting').toggleClass('hovered');
+		});
+		// meeting2
+		$('#bibtex_display_meeting2').hide();
+		$('#meeting2').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_meeting2').slideToggle('slow');
+		});
+		$('#meeting2').find('h4').hover(function () {
+			$('#bibtex_display_meeting2').toggleClass('hovered');
+		});
+		// patent
+		$('#bibtex_display_patent').hide();
+		$('#patent').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_patent').slideToggle('slow');
+		});
+		$('#patent').find('h4').hover(function () {
+			$('#bibtex_display_patent').toggleClass('hovered');
+		});
+		// award
+		$('#bibtex_display_award').hide();
+		$('#award').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_award').slideToggle('slow');
+		});
+		$('#award').find('h4').hover(function () {
+			$('#bibtex_display_award').toggleClass('hovered');
+		});
+	});
+
+})(jQuery);
+</script>
+	</body>
+</html>
