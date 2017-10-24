@@ -141,7 +141,7 @@
 				私は人工知能・機械学習技術の実問題への展開，特に時系列データ処理に関する研究に取り組んでいます．
 				世の中の多くのデータは潜在的に時系列の情報を含んでいますが，
 				問題に固有の背景知識・ノイズなどの要因により，未だ確立された技術が存在しないのが現状です．
-				私は，そのような時系列を扱う実問題の解決に取り組んでいます．
+				私は実問題を通してそういった問題を解決するための技術の開発に取り組んでいます．
 				</p>
 				<!--
 				世の中の多くのデータは潜在的に時系列の情報を含んでいますが，
@@ -373,6 +373,15 @@
 <p id="bibtex_display_conf" class="text-left bib_box"></p>
 </div>
 
+<div id="lecture" class="other_box">
+<h4 class="active"><div class="header"></div>講演会</h4>
+<div id="bibtex_display_lecture" class="text-left bib_box">
+<ul><li>小島 諒介 「深層学習と確率プログラミングを融合したEdwardについて」<br>
+<a href="http://www.airc.aist.go.jp/seminar_detail/seminar_017a.html">産総研AIRC第１７回人工知能セミナー:確率プログラミングの世界：論理と確率をつなぐ人工知能</a><br>
+Slide: <a href="https://www.slideshare.net/ryosuke-kojima/edward-80980204">https://www.slideshare.net/ryosuke-kojima/edward-80980204</a></li></ul>
+</div>
+</div>
+
 
 <div id="conf2" class="other_box">
 <h4><div class="header"></div>そのほかの国際会議・国際ワークショップ</h4>
@@ -548,7 +557,6 @@ publisher = {日本ロボット学会}
 </textarea>
 <p id="bibtex_display_meeting" class="text-left bib_box"></p>
 </div>
-
 
 <div id="meeting2" class="other_box">
 <h4><div class="header"></div>そのほかの国内学会・国内ワークショップ・研究会等</h4>
@@ -869,6 +877,15 @@ publisher = {日本ロボット学会}
 		$('#conf').find('h4').hover(function () {
 			$('#bibtex_display_conf').toggleClass('hovered');
 		});
+		// lecture
+		$('#lecture').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_lecture').slideToggle('slow');
+		});
+		$('#lecture').find('h4').hover(function () {
+			$('#bibtex_display_lecture').toggleClass('hovered');
+		});
+		
 		// conf2
 		$('#bibtex_display_conf2').hide();
 		$('#conf2').find('h4').click(function () {
