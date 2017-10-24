@@ -99,8 +99,8 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="http://www.cyb.mei.titech.ac.jp/nakadai/">
-					<img src="assets/img/logo.png" height="50">
+					<a class="navbar-brand" href="http://clinfo.med.kyoto-u.ac.jp/en/">
+					<img src="assets/img/logo_eng.png" height="50">
 					</a>
 				</div>
 				<div class="navbar-collapse collapse">
@@ -127,17 +127,32 @@
 		<div class="row centered">
 			<div class="col-lg-4 col-lg-offset-2">
 <!-- profile -->
-				<h4>Ryosuke Kojima</h4>
+				<h4>Ryosuke Kojima, Ph.D.</h4>
 				<p>
-					Doctoral course student<br/>
-					Graduate School of Information Science and Engineering, Tokyo Institute of Technology.<br/>
-					Nakadai Lab.<br/>
-					Email: kojima[at]cyb.mei.titech.ac.jp<br/>
+				Department of Biomedical Data Intelligence, <br/>
+				Graduate School of Medicine,<br/>
+				Kyoto University <br/>
+				Email: kojima.ryosuke.8e[at]kyoto-u.ac.jp<br/>
 				</p>
 			</div>
 			<div class="col-lg-4">
 <!-- my picture -->
 				<img class="img-circle" src="assets/img/user.jpg" height="200" width="200">
+			</div>
+			<div class="col-lg-8 col-lg-offset-2 text-left">
+<!-- message -->
+				<p>
+I am studying artificial intelligence (AI) and machine learning technology to apply them to real-world problems.
+My interests include time-series data processing.
+There are no established technology to analyze time-series data due to many domain-specific dificulties.
+I am addressing various real world problems in order to discover and establish an efficient methodology of time series data.
+<!--
+My interests include probabilistic logic programming (its applications to time-series data),
+outdoor audio signal processing (its applications to robots and other research fields such as ethology),
+time-series medical data analysis in clinical informatics.</p>
+-->
+</p>
+<!-- upto here -->
 			</div>
 		</div>
 	</div>
@@ -163,15 +178,37 @@
 	<li>used in <span class="ref">[t1]</span> for probability computations on the hierarchical hidden Markov model (HHMM)</li>
 	<li>used in <span class="ref">[t2][t3]</span> for the prefix probability computation on the probabilistic context-free grammar (PCFG)</li>
 	<li>I'm a developer (ver. 2.2 or later)</li>
-	</ul>
-	</li>
 </ul>
 </div>
+
+<div id="dev" class="other_box">
+<h4 class="active">Biography</h4>
+<ul>
+<li>2012: received a B.E. in computer science in 2012 from the Tokyo Institute of technology</li>
+<li>2014: received an M.E. in information science and engineering in 2014  from the Tokyo Institute of technology</li>
+<li>2017: received  a Ph.D.(engineering) in information science and engineering in 2017 from the Tokyo Institute of technology</li>
+<li>2017: currently a program-specific associate professor (AMED) at Kyoto University</li>
+</ul>
+</div>
+
+
 
 <div id="journal" class="other_box">
 <h4 class="active"><div class="header"></div>Journal</h4>
 
 <textarea id="bibtex_journal" style="display:none;">
+
+
+@article{kojima2017jrm,
+  title={Bird Song Scene Analysis Using a Spatial-Cue-Based Probabilistic Model},
+  author={Kojima, Ryosuke and Sugiyama, Osamu and Hoshiba, Kotaro and Nakadai, Kazuhiro and Suzuki, Reiji and Taylor, Charles E.},
+  journal={Journal of Robotics and Mechatronics},
+  volume={29},
+  number={1},
+  year={2017},
+  publisher={Fujipress},
+  url="https://www.fujipress.jp/jrm/rb/robot002900010236/"
+}
 
 @article{kojima2016multimodal,
   title={Multimodal Scene Understanding Framework and Its Application to Cooking Recognition},
@@ -181,7 +218,8 @@
   number={3},
   pages={181--200},
   year={2016},
-  publisher={Taylor \& Francis}
+  publisher={Taylor \& Francis},
+  url="http://www.tandfonline.com/doi/abs/10.1080/08839514.2016.1156461"
 }
 
 @incollection{kojima2015goal,
@@ -193,6 +231,54 @@
   publisher={Springer},
   url="http://link.springer.com/chapter/10.1007%2F978-3-319-23708-4_6"
   
+}
+
+
+@article{sugiyama2017outdoor,
+  title={Outdoor Acoustic Event Identification with DNN Using a Quadrotor-Embedded Microphone Array (Special Issue on Robot Audition Technologies)},
+  author={Sugiyama, Osamu and Uemura, Satoshi and Nagamine, Akihide and Kojima, Ryosuke and Nakamura, Keisuke and Nakadai, Kazuhiro},
+  journal={Journal of robotics and mechatronics},
+  volume={29},
+  number={1},
+  pages={188--197},
+  year={2017},
+  publisher={Fuji Technology Press},
+  url="https://www.fujipress.jp/jrm/rb/robot002900010188/"
+}
+
+
+@article{hoshiba2017jrm,
+  title={Design and Assessment of Sound Source Localization System with a UAV-embedded Microphone Array},
+  author={Kotaro Hoshiba and Osamu Sugiyama and Akihide Nagamine and Ryosuke Kojima and Makoto Kumon and Kazuhiro Nakadai},
+  journal={Journal of Robotics and Mechatronics},
+  volume={29},
+  number={1},
+  year={2017},
+  publisher={Fujipress},
+  url="https://www.fujipress.jp/jrm/rb/robot002900010154/"
+}
+
+@article{ohata2017jrm,
+  title={Outdoor Sound Source Detection for a Quadrotor with a Microphone Array},
+  author={Takuma Ohata and Keisuke Nakamura and Akihide Nagamine and Takeshi Mizumoto and Takayuki Ishizaki and Ryosuke Kojima and Osamu Sugiyama and Kazuhiro Nakadai},
+  journal={Journal of Robotics and Mechatronics},
+  volume={29},
+  number={1},
+  year={2017},
+  publisher={Fujipress},
+  url="https://www.fujipress.jp/jrm/rb/robot002900010177/"
+}
+
+
+@article{Matsubayashi2017jrm,
+  title={Acoustic monitoring of the great reed warbler using multiple microphone arrays and robot audition},
+  author={Shiho Matsubayashi and Reiji Suzuki and Fumiyuki Saito and Tatsuyoshi Murate and Tomohisa Masuda and Koichi Yamamoto and Ryosuke Kojima and Kazuhiro Nakadai and Hiroshi G. Okuno},
+  journal={Journal of Robotics and Mechatronics},
+  volume={29},
+  number={1},
+  year={2017},
+  publisher={Fujipress},
+  url="https://www.fujipress.jp/jrm/rb/robot002900010224/"
 }
 
 

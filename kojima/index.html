@@ -99,7 +99,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="http://www.cyb.mei.titech.ac.jp/nakadai/">
+					<a class="navbar-brand" href="http://clinfo.med.kyoto-u.ac.jp/">
 					<img src="assets/img/logo.png" height="50">
 					</a>
 				</div>
@@ -116,9 +116,7 @@
 		<div class="container">
 			<div class="row centered">
 				<div class="col-lg-8 col-lg-offset-2">
-<!-- 適当に好きなフレーズに書き換えましょう。 -->
-<!-- 				<h2> Something is wrong with the world </h2> -->
-<!-- ここまで -->
+<!-- title? -->
 				</div>
 			</div>
 		</div>
@@ -127,24 +125,31 @@
 		<div class="row centered">
 			<div class="col-lg-4 col-lg-offset-2">
 <!-- 自分のプロフィールに書き換えよう -->
-				<h4>小島　諒介</h4>
+				<h4>小島 諒介</h4>
 				<p>
-					東京工業大学大学院情報理工学研究科情報環境学専攻<br/>
-					中臺研究室 D3<br/>
-					Email: kojima[at]cyb.mei.titech.ac.jp<br/>
+					京都大学 大学院医学研究科人間健康科学系専攻<br/>
+					ビッグデータ医科学分野 奥野研究室 <br/>
+					Email: kojima.ryosuke.8e[at]kyoto-u.ac.jp<br/>
 				</p>
 			</div>
 			<div class="col-lg-4">
 <!-- assets/img/user.pngを自分の写真に置き換えよう -->
 				<img class="img-circle" src="assets/img/user.jpg" height="200" width="200">
 			</div>
-			<div class="col-lg-8 col-lg-offset-2">
-<!-- 自分用のメッセージに書き換えよう -->
-				<h4>ようこそ</h4>
-				<p>こんにちは。小島　諒介です。このページは、私のやってきたことを簡単にまとめています。
-				私は東京工業大学で修士時代に人工知能・機械学習・データマイニングの研究を行っていました．
-				現在は，音を中心とした環境の理解（音環境理解）に関する研究をしています．</p>
-				
+			<div class="col-lg-8 col-lg-offset-2 text-left">
+				<p>
+				私は人工知能・機械学習技術の実問題への展開，特に時系列データ処理に関する研究に取り組んでいます．
+				世の中の多くのデータは潜在的に時系列の情報を含んでいますが，
+				問題に固有の背景知識・ノイズなどの要因により，未だ確立された技術が存在しないのが現状です．
+				私は，そのような時系列を扱う実問題の解決に取り組んでいます．
+				</p>
+				<!--
+				世の中の多くのデータは潜在的に時系列の情報を含んでいますが，
+				そのような情報を有効活用するためには，問題に固有の背景知識・ノイズなど考慮すべき要因が多く存在し，未だ確立された技術が存在しないのが現状です．
+				私は，そのような時系列データを扱う実問題に対して複数の視点から解決に取り組んでいます．
+				具体的には，確率論理プログラミングとその時系列データへの応用に関する研究，
+屋外ノイズ下での音響信号処理とロボットへの応用やこれら技術の時系列医療データ分析・創薬への展開を進めています．
+自分用のメッセージに書き換えよう -->
 <!-- ここまで -->
 			</div>
 		</div>
@@ -174,6 +179,15 @@
 	</li>
 </ul>
 </div>
+<div id="dev" class="other_box">
+<h4 class="active">略歴</h4>
+<ul>
+	<li>2014年：東京工業大学大学院 情報理工学研究科 計算工学専攻 修士課程修了</li>
+	<li>2017年：東京工業大学大学院 情報理工学研究科 情報環境学専攻 博士課程修了，博士(工学)</li>
+	<li>2017年：京都大学医学研究科 大学院医学研究科人間健康科学系専攻 ビッグデータ医科学分野, 特定助教</li>
+</ul>
+</div>
+
 <div id="journal" class="other_box">
 <h4 class="active"><div class="header"></div>学術雑誌等</h4>
 
@@ -185,8 +199,9 @@
   journal={Journal of Robotics and Mechatronics},
   volume={29},
   number={1},
-  year={2017(accepted)},
-  publisher={Fujipress}
+  year={2017},
+  publisher={Fujipress},
+  url="https://www.fujipress.jp/jrm/rb/robot002900010236/"
 }
 
 @article{kojima2016multimodal,
@@ -197,7 +212,8 @@
   number={3},
   pages={181--200},
   year={2016},
-  publisher={Taylor \& Francis}
+  publisher={Taylor \& Francis},
+  url="http://www.tandfonline.com/doi/abs/10.1080/08839514.2016.1156461"
 }
 
 @incollection{kojima2015goal,
@@ -223,6 +239,17 @@
   doi={10.1527/tjsai.29.301}
 }
 
+@article{sugiyama2017outdoor,
+  title={Outdoor Acoustic Event Identification with DNN Using a Quadrotor-Embedded Microphone Array (Special Issue on Robot Audition Technologies)},
+  author={Sugiyama, Osamu and Uemura, Satoshi and Nagamine, Akihide and Kojima, Ryosuke and Nakamura, Keisuke and Nakadai, Kazuhiro},
+  journal={Journal of robotics and mechatronics},
+  volume={29},
+  number={1},
+  pages={188--197},
+  year={2017},
+  publisher={Fuji Technology Press},
+  url="https://www.fujipress.jp/jrm/rb/robot002900010188/"
+}
 
 
 @article{hoshiba2017jrm,
@@ -231,8 +258,9 @@
   journal={Journal of Robotics and Mechatronics},
   volume={29},
   number={1},
-  year={2017(accepted)},
-  publisher={Fujipress}
+  year={2017},
+  publisher={Fujipress},
+  url="https://www.fujipress.jp/jrm/rb/robot002900010154/"
 }
 
 @article{ohata2017jrm,
@@ -241,8 +269,9 @@
   journal={Journal of Robotics and Mechatronics},
   volume={29},
   number={1},
-  year={2017(accepted)},
-  publisher={Fujipress}
+  year={2017},
+  publisher={Fujipress},
+  url="https://www.fujipress.jp/jrm/rb/robot002900010177/"
 }
 
 
@@ -252,8 +281,9 @@
   journal={Journal of Robotics and Mechatronics},
   volume={29},
   number={1},
-  year={2017(accepted)},
-  publisher={Fujipress}
+  year={2017},
+  publisher={Fujipress},
+  url="https://www.fujipress.jp/jrm/rb/robot002900010224/"
 }
 
 
@@ -273,7 +303,8 @@
   year={2016},
   month={Oct.},
   place={Daejeon},
-  organization={IEEE}
+  organization={IEEE},
+  url="http://ieeexplore.ieee.org/document/7759213/"
 }
 
 @inproceedings{kojima2015audio,
@@ -346,6 +377,8 @@
 <div id="conf2" class="other_box">
 <h4><div class="header"></div>そのほかの国際会議・国際ワークショップ</h4>
 <textarea id="bibtex_conf2" style="display:none;">
+
+
 
 @inproceedings{morito2016iros,
   title={Partially Shared Deep Neural Network in Sound Source Separation and Identification Using a UAV-Embedded Microphone Array},
