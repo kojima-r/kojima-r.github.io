@@ -457,6 +457,7 @@ function bibtex_js_draw() {
   (new BibtexDisplay()).displayBibtex($("#bibtex_conf2").val(), $("#bibtex_display_conf2"),"C");
   (new BibtexDisplay()).displayBibtex($("#bibtex_meeting").val(), $("#bibtex_display_meeting"),"m");
   (new BibtexDisplay()).displayBibtex($("#bibtex_meeting2").val(), $("#bibtex_display_meeting2"),"M");
+  (new BibtexDisplay()).displayBibtex($("#bibtex_other_article").val(), $("#bibtex_display_other_article"),"a");
  
 }
 

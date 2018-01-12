@@ -165,16 +165,17 @@
 	<li>
 	ロボット聴覚オープンソース・ソフトウェア：<a href="http://www.hark.jp/">HARK</a>
 	<ul>
-	<li>第11,12回HARK講習会　講師</li>
-	<li><span class="ref">[t1][c1]</span> にて音源定位・音源分離に利用</li>
+	<li>第11, 12, 13回HARK講習会　講師, 第4回HARK hackathon スタッフ</li>
+	<li><span class="ref">[t2][c1]</span> にて音源定位・音源分離に利用</li>
 	</ul>
 	</li>
 	<li>
 	記号統計モデリングオープンソース・ソフトウェア：<a href="http://rjida.meijo-u.ac.jp/prism/">PRISM</a>
 	<ul>
 	<li>Ver. 2.2以降 開発メンバ</li>
-	<li><span class="ref">[t2]</span> にて階層隠れマルコフモデル HHMM の確率計算に利用</li>
-	<li><span class="ref">[t3][t4]</span> にて確率文脈自由文法 PCFG の Prefix 確率計算に利用</li>
+	<li><span class="ref">[t1]</span> にて Preference learning に利用</li>
+	<li><span class="ref">[t3]</span> にて階層隠れマルコフモデル HHMM の確率計算に利用</li>
+	<li><span class="ref">[t4][t5]</span> にて確率文脈自由文法 PCFG の Prefix 確率計算に利用</li>
 	</ul>
 	</li>
 </ul>
@@ -192,6 +193,15 @@
 <h4 class="active"><div class="header"></div>学術雑誌等</h4>
 
 <textarea id="bibtex_journal" style="display:none;">
+@article{kojima2018ijar,
+title = {Learning to rank in PRISM},
+journal = {International Journal of Approximate Reasoning},
+volume = {93},
+pages = {561 - 577},
+year = {2018},
+url = "http://www.sciencedirect.com/science/article/pii/S0888613X17303596",
+author = "Ryosuke Kojima and Taisuke Sato",
+}
 
 @article{kojima2017jrm,
   title={Bird Song Scene Analysis Using a Spatial-Cue-Based Probabilistic Model},
@@ -239,6 +249,15 @@
   doi={10.1527/tjsai.29.301}
 }
 
+@article{suzuki2017spatiotemporal,
+  title={A spatiotemporal analysis of acoustic interactions between great reed warblers (Acrocephalus arundinaceus) using microphone arrays and robot audition software HARK},
+  author={Suzuki, Reiji and Matsubayashi, Shiho and Saito, Fumiyuki and Murate, Tatsuyoshi and Masuda, Tomohisa and Yamamoto, Koichi and Kojima, Ryosuke and Nakadai, Kazuhiro and Okuno, Hiroshi G},
+  journal={Ecology and Evolution},
+  year={2017},
+  publisher={Wiley Online Library},
+  url="http://onlinelibrary.wiley.com/doi/10.1002/ece3.3645/references",
+}
+
 @article{sugiyama2017outdoor,
   title={Outdoor Acoustic Event Identification with DNN Using a Quadrotor-Embedded Microphone Array (Special Issue on Robot Audition Technologies)},
   author={Sugiyama, Osamu and Uemura, Satoshi and Nagamine, Akihide and Kojima, Ryosuke and Nakamura, Keisuke and Nakadai, Kazuhiro},
@@ -274,7 +293,6 @@
   url="https://www.fujipress.jp/jrm/rb/robot002900010177/"
 }
 
-
 @article{Matsubayashi2017jrm,
   title={Acoustic monitoring of the great reed warbler using multiple microphone arrays and robot audition},
   author={Shiho Matsubayashi and Reiji Suzuki and Fumiyuki Saito and Tatsuyoshi Murate and Tomohisa Masuda and Koichi Yamamoto and Ryosuke Kojima and Kazuhiro Nakadai and Hiroshi G. Okuno},
@@ -295,6 +313,15 @@
 <div id="conf" class="other_box">
 <h4 class="active"><div class="header"></div>国際会議・国際ワークショップ</h4>
 <textarea id="bibtex_conf" style="display:none;">
+@inproceedings{kojima2017dsaa,
+  title={A Spatial-Cue-Based Probabilistic Model for Bird Song Scene Analysis},
+  author={Ryosuke Kojima and Osamu Sugiyama and Kotaro Hoshiba and Reiji Suzuki and Kazuhiro Nakadai},
+  howpublished={International Conference on Data Science and Advanced Analytics (DSAA)},
+  year={2017},
+  month={Oct.},
+  place={Tokyo},
+  organization={IEEE},
+}
 
 @inproceedings{kojima2016iros,
   title={Semi-Automatic Bird Song Analysis by Spatial-Cue-Based Integration of Sound Source Detection, Localization, Separation, and Identification},
@@ -383,10 +410,28 @@ Slide: <a href="https://www.slideshare.net/ryosuke-kojima/edward-80980204">https
 </div>
 
 
+
 <div id="conf2" class="other_box">
 <h4><div class="header"></div>そのほかの国際会議・国際ワークショップ</h4>
 <textarea id="bibtex_conf2" style="display:none;">
 
+@inproceedings{kamada2017swat,
+  title={Construction of Knowledge-base for Clinical Interpretation of Genomic Variants},
+  author={Mayumi Kamada and Toshiaki Katayama and Shuichi Kawashima and Ryosuke Kojima and Masahiko Nakatsui and Yasushi Okuno},
+  booktitle={Semantic Web Applications and Tools for the Life Sciences (SWAT4LS)},
+  url="http://www.swat4ls.org/wp-content/uploads/2017/12/paper_43.pdf",
+  year={2017},
+}
+
+@inproceedings{nakadai2017iros, 
+author={K. Nakadai and M. Kumon and H. G. Okuno and K. Hoshiba and M. Wakabayashi and K. Washizaki and T. Ishiki and D. Gabriel and Y. Bando and T. Morito and R. Kojima and O. Sugiyama}, 
+booktitle={2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+title={Development of microphone-array-embedded UAV for search and rescue task}, 
+year={2017}, 
+pages={5985-5990}, 
+doi={10.1109/IROS.2017.8206494}, 
+month={Sept},
+}
 
 
 @inproceedings{morito2016iros,
@@ -456,7 +501,14 @@ Slide: <a href="https://www.slideshare.net/ryosuke-kojima/edward-80980204">https
 <div id="meeting" class="other_box">
 <h4><div class="header"></div>国内学会・国内ワークショップ・研究会等</h4>
 <textarea id="bibtex_meeting" style="display:none;">
-
+@misc{kojima2017bird,
+  title = {機械学習に基づく鳥類の鳴き声の自動分類},
+  author = {小島 諒介},
+  howpublished={鳥学会自由集会},
+  year = {2017},
+  month = {Sep.},
+  place={筑波},
+}
 
 @misc{kojima2016kiban_s,
   title = {マイクロフォンアレイを利用した確率的環境理解フレームワーク},
@@ -562,11 +614,27 @@ publisher = {日本ロボット学会}
 <h4><div class="header"></div>そのほかの国内学会・国内ワークショップ・研究会等</h4>
 <textarea id="bibtex_meeting2" style="display:none;">
 
+@inproceedings{taniguchi2017,
+  title = {Iterative Outlier Removal Method Using In-Cluster Variance Changes in Multi-Microphone Array Sound Source Localization.},
+  author = {Daniel Gabriel, 小島諒介, 干場功太郎, 中臺 一博},
+  howpublished={情報処理学会第79回全国大会（IPSJ2017）},
+  year = {2017},
+  month = {Mar.},
+  place={名古屋},
+}
+@inproceedings{taniguchi2017,
+  title = {LSTMによる音楽音響信号の修復法の提案-周波数フィルタ導入による学習データ量削減の検討},
+  author = {谷口亮輔 and 小島諒介 and 干場功太郎 and 中臺 一博},
+  howpublished={情報処理学会第79回全国大会（IPSJ2017）},
+  year = {2017},
+  month = {Mar.},
+  place={名古屋},
+}
 
 
 @misc{nakadai2016si,
   title = {HARK 2.3 の紹介とタフロボティクスチャレンジへの展開},
-  author = {中臺 一博, 坂東 宜昭,水本 武志, 干場 功太郎, 小島 諒介, 糸山 克寿, 杉山 治, 公文 誠, 奥乃 博},
+  author = {中臺 一博 and 坂東 宜昭 and 水本 武志 and 干場 功太郎 and 小島 諒介 and 糸山 克寿 and 杉山 治 and 公文 誠 and 奥乃 博},
   howpublished={第17回計測自動制御学会システムインテグレーション部門講演会 (SI2016)},
   year = {2016},
   month = {Dec.},
@@ -786,6 +854,27 @@ publisher = {日本ロボット学会}
 <p id="bibtex_display_meeting2" class="text-left bib_box"></p>
 </div>
 
+
+<div id="other_article" class="other_box">
+<h4><div class="header"></div>そのほか特集記事等</h4>
+<textarea id="bibtex_other_article" style="display:none;">
+
+@article{taneishi2017ai,
+  title={創薬における AI の可能性},
+  author={種石慶 and 岩田浩明 and 小島諒介 and 奥野恭史},
+  journal={日本化学会情報化学部会誌},
+  volume={35},
+  number={3},
+  pages={202},
+  year={2017},
+  publisher={公益社団法人 日本化学会・情報化学部会},
+  url="https://www.jstage.jst.go.jp/article/cicsj/35/3/35_202/_article/-char/ja/",
+}
+
+</textarea>
+<p id="bibtex_display_other_article" class="text-left bib_box"></p>
+</div>
+
 <div id="patent" class="other_box">
 <h4><div class="header"></div>特許</h4>
 <div id="bibtex_display_patent" class="text-left bib_box">
@@ -913,6 +1002,15 @@ publisher = {日本ロボット学会}
 		});
 		$('#meeting2').find('h4').hover(function () {
 			$('#bibtex_display_meeting2').toggleClass('hovered');
+		});
+		// other_article
+		$('#bibtex_display_other_article').hide();
+		$('#other_article').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_other_article').slideToggle('slow');
+		});
+		$('#other_article').find('h4').hover(function () {
+			$('#bibtex_display_other_article').toggleClass('hovered');
 		});
 		// patent
 		$('#bibtex_display_patent').hide();
