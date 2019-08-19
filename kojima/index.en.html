@@ -167,19 +167,24 @@ time-series medical data analysis in clinical informatics.</p>
 <ul>
 	<li>
 	Open-sourced robot audition software ：<a href="http://www.hark.jp/">HARK</a>
-	<ul>
-	<li>used in <span class="ref">[t2][c1]</span> for sound source localization and separation</li>
-	<li>I'm a lecturer in the 11th, 12th, and 13th HARK seminars and 4th HARK hackathon</li>
-	</ul>
+		<ul>
+		<li>used in <span class="ref">[t2][c1]</span> for sound source localization and separation</li>
+		<li>I'm a lecturer in the 11th, 12th, and 13th HARK seminars and 4th HARK hackathon</li>
+		</ul>
 	</li>
 	<li>
-	A probabilistic programming language：<a href="https://rjida.meijo-u.ac.jp/prism/">PRISM</a>
-	<ul>
-	<li>used in <span class="ref">[t1]</span> for preference learning for  and knowledge graph</li>
-	<li>used in <span class="ref">[t2]</span> for probability computations on the hierarchical hidden Markov model (HHMM)</li>
-	<li>used in <span class="ref">[t3][t4]</span> for the prefix probability computation on the probabilistic context-free grammar (PCFG)</li>
-	<li>I'm a developer (ver. 2.2 or later)</li>
-</ul>
+	A probabilistic programming language：<a href="https://rjida.meijo-u.ac.jp/prism/">PRISM</a> (<a href="https://github.com/prismplp/prism">github page</a>)
+		<ul>
+		<li>used in <span class="ref">[t1]</span> for preference learning for  and knowledge graph</li>
+		<li>used in <span class="ref">[t2]</span> for probability computations on the hierarchical hidden Markov model (HHMM)</li>
+		<li>used in <span class="ref">[t3][t4]</span> for the prefix probability computation on the probabilistic context-free grammar (PCFG)</li>
+		<li>I'm a developer (ver. 2.2 or later and T-PRISM(tensorized version of PRISM))</li>
+		</ul>
+	</li>
+	<li>
+	A graph neural network platform for life science: <a href="https://github.com/clinfo/kGCN">kGCN</a>
+	</li>
+
 </div>
 
 <div id="dev" class="other_box">
@@ -329,6 +334,17 @@ author = "Ryosuke Kojima and Taisuke Sato",
 <div id="conf" class="other_box">
 <h4 class="active"><div class="header"></div>Conference and workshop</h4>
 <textarea id="bibtex_conf" style="display:none;">
+
+@inproceedings{kojima2019ijcaiws,
+  title={T-PRISM: A tensorized logic programming language for data modelling},
+  author = {Ryosuke Kojima and Taisuke Sato},
+  howpublished={IJCAI 2019 Workshop on neural-symbolic learning and reasoning},
+  url={https://sites.google.com/view/nesy2019/home},
+  year={2019},
+  month={Aug.},
+  place={Macau},
+}
+
 @inproceedings{kojima2019aaaiws,
   title={A tensorized logic programming language for large-scale data},
   author = {Ryosuke Kojima and Taisuke Sato},
@@ -338,6 +354,7 @@ author = "Ryosuke Kojima and Taisuke Sato",
   month={Jan.},
   place={Hawaii},
 }
+
 @inproceedings{kojima2018iros,
   title={HARK-Bird-Box: A Portable Real-Time Bird Song Scene Analysis System},
   author={Ryosuke Kojima and Osamu Sugiyama and Kotaro Hoshiba and Reiji Suzuki and Kazuhiro Nakadai},
@@ -347,6 +364,7 @@ author = "Ryosuke Kojima and Taisuke Sato",
   place={Madrid},
   organization={IEEE},
 }
+
 @inproceedings{kojima2017dsaa,
   title={A Spatial-Cue-Based Probabilistic Model for Bird Song Scene Analysis},
   author={Ryosuke Kojima and Osamu Sugiyama and Kotaro Hoshiba and Reiji Suzuki and Kazuhiro Nakadai},
@@ -429,6 +447,19 @@ author = "Ryosuke Kojima and Taisuke Sato",
 <div id="conf2" class="other_box">
 <h4><div class="header"></div>Other conference and workshop</h4>
 <textarea id="bibtex_conf2" style="display:none;">
+
+
+@inproceedings{sato2019ijcaiws,
+  title={Logical inference as cost minimization in vector spaces},
+  author = {Taisuke Sato and Ryosuke Kojima},
+  howpublished={IJCAI 2019 Workshop on Declarative Learning Based Programming},
+  url={https://delbp.github.io/},
+  year={2019},
+  month={Aug.},
+  place={Macau},
+}
+
+
 @inproceedings{nagasaka2019,
   author    = {Yusuke Nagasaka and Akira Nukada and Ryosuke Kojima and Satoshi Matsuoka},
   title     = {Batched Sparse Matrix Multiplication for Accelerating Graph Convolutional Networks},
@@ -437,6 +468,29 @@ author = "Ryosuke Kojima and Taisuke Sato",
   url       = "http://arxiv.org/abs/1903.11409",
 }
 	
+@misc{kojima2019gcn,
+  title = {A Prediction Framework for Drug Discovery Using Graph Convolutional Networks},
+  author = {Ryosuke Kojima and Hiroaki Iwata and Shoichi Ishida and Marie Ikeguchi and Yasushi Okuno},
+  howpublished={5th International Symposium for Medicinal Sciences (ISMS) (poster)},
+  year = {2019},
+  month = {Mar.},
+  place={Chiba},
+  url="http://nenkai.pharm.or.jp/139/pc/ssympo.asp?i=2248",
+}
+
+@inproceedings{daniel2019sii, 
+  author={Gabriel, Daniel and Kojima, Ryosuke and Hoshiba, Kotaro and Itoyama, Katsutoshi and Nishida, Kenji and Nakadai, Kazuhiro}, 
+  booktitle={2019 IEEE/SICE International Symposium on System Integration (SII)}, 
+  title={Design and assessment of multiple-sound source localization using microphone arrays}, 
+  year={2019}, 
+  volume={}, 
+  number={}, 
+  pages={199-204}, 
+  doi={10.1109/SII.2019.8700368}, 
+  ISSN={2474-2325}, 
+  month={Jan.},
+}
+
 @inproceedings{kamada2017swat,
   title={Construction of Knowledge-base for Clinical Interpretation of Genomic Variants},
   author={Mayumi Kamada and Toshiaki Katayama and Shuichi Kawashima and Ryosuke Kojima and Masahiko Nakatsui and Yasushi Okuno},
