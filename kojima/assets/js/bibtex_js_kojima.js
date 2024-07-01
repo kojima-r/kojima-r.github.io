@@ -458,6 +458,8 @@ function bibtex_js_draw() {
   (new BibtexDisplay()).displayBibtex($("#bibtex_meeting").val(), $("#bibtex_display_meeting"),"m");
   (new BibtexDisplay()).displayBibtex($("#bibtex_meeting2").val(), $("#bibtex_display_meeting2"),"M");
   (new BibtexDisplay()).displayBibtex($("#bibtex_other_article").val(), $("#bibtex_display_other_article"),"a");
+  (new BibtexDisplay()).displayBibtex($("#bibtex_review_article").val(), $("#bibtex_display_review_article"),"r");
+  (new BibtexDisplay()).displayBibtex($("#bibtex_book_chapter").val(), $("#bibtex_display_book_chapter"),"b");
  
 }
 
