@@ -962,6 +962,17 @@ month={Sept},
   url="https://www.imic.or.jp/member/files/2020/07/2f2dce947023baa243b79b0c47100290.pdf",
 }
 
+@article{ueda2020ai,
+  title={医療における人工知能「AI」},
+  author={植田 彰彦 and 小島 諒介 and 山口 建 and 濱西 潤三 and 万代 昌紀 and 奥野 恭史},
+  journal={産婦人科の実際},
+  volume={69},
+  number={5},
+  year={2020},
+  publisher={金原出版},
+  url="https://webview.isho.jp/journal/detail/abs/10.18888/sp.0000001263",
+}
+
 @article{iwata2019ai,
   title={標的分子探索，ドラッグリポジショニング，オミクスメカニズム解明},
   author={岩田 浩明 and 小島 諒介 and 玉田 嘉紀},
@@ -972,17 +983,6 @@ month={Sept},
   year={2019},
   publisher={ニューサイエンス社},
   url="http://hokuryukan-ns.co.jp/cms/books/%E6%9C%88%E5%88%8A%E3%80%8C%E7%B4%B0%E8%83%9E%E3%80%8D2019%E5%B9%B4-6%E6%9C%88%E8%87%A8%E6%99%82%E5%A2%97%E5%88%8A%E5%8F%B7/",
-}
-
-@article{ueda2020ai,
-  title={医療における人工知能「AI」},
-  author={植田 彰彦 and 小島 諒介 and 山口 建 and 濱西 潤三 and 万代 昌紀 and 奥野 恭史},
-  journal={産婦人科の実際},
-  volume={69},
-  number={5},
-  year={2020},
-  publisher={金原出版},
-  url="https://webview.isho.jp/journal/detail/abs/10.18888/sp.0000001263",
 }
 
 @article{tanaka2019ai,
@@ -1025,30 +1025,6 @@ month={Sept},
 <h4><div class="header"></div>Review article</h4>
 <textarea id="bibtex_review_article" style="display:none;">
 
-
-@article{kojima2021t,
-  title={T-PRISM: 深層学習と論理プログラミングの融合},
-  author={小島 諒介 and 佐藤泰介},
-  journal={人工知能学会誌},
-  volume={36},
-  number={4},
-  pages={437--444},
-  year={2021},
-  publisher={一般社団法人 人工知能学会},
-  url="https://www.jstage.jst.go.jp/article/jjsai/36/4/36_437/_article/-char/ja/",
-}
-
-@article{kojima2019ai,
-  title={深層学習と論理プログラミングの融合に関する最新の動向 },
-  author={小島 諒介 and 佐藤 泰介},
-  journal={人工知能学会誌},
-  volume={34},
-  number={5},
-  year={2019},
-  publisher={人工知能学会},
-  url="http://www.ai-gakkai.or.jp/vol34_no5/",
-}
-
 @article{iwata2021ai,
   title={AIM in Pharmacology and Drug Discovery},
   author={Iwata, Hiroaki and Kojima, Ryosuke and Okuno, Yasushi},
@@ -1072,6 +1048,19 @@ month={Sept},
 	URL = {https://doi.org/10.1038/s41440-020-0498-x},
 }
 
+
+@article{kojima2021t,
+  title={T-PRISM: 深層学習と論理プログラミングの融合},
+  author={小島 諒介 and 佐藤泰介},
+  journal={人工知能学会誌},
+  volume={36},
+  number={4},
+  pages={437--444},
+  year={2021},
+  publisher={一般社団法人 人工知能学会},
+  url="https://www.jstage.jst.go.jp/article/jjsai/36/4/36_437/_article/-char/ja/",
+}
+
 @article{uchino2020ai,
   title={臨床データを用いた医療ビッグデータの解析と創薬への応用},
   author={内野 詠一郎 and 佐藤憲明 and 小島諒介 and 玉田嘉紀 and 柳田素子 and 奥野恭史},
@@ -1080,6 +1069,17 @@ month={Sept},
   number={2},
   pages={24-27},
   year={2020},
+}
+
+@article{kojima2019ai,
+  title={深層学習と論理プログラミングの融合に関する最新の動向 },
+  author={小島 諒介 and 佐藤 泰介},
+  journal={人工知能学会誌},
+  volume={34},
+  number={5},
+  year={2019},
+  publisher={人工知能学会},
+  url="http://www.ai-gakkai.or.jp/vol34_no5/",
 }
 </textarea>
 <p id="bibtex_display_review_article" class="text-left bib_box"></p>
@@ -1856,6 +1856,9 @@ publisher = {日本ロボット学会}
 <div id="bibtex_display_award" class="text-left bib_box">
 <ul>
 <li>Kojima, R. and Sato, T.:ILP 2014 Best Student Paper runner-up</li>
+<li>小島諒介，杉山治, 中臺一博: 第３３回日本ロボット学会研究奨励賞</li>
+<li>松林志保，鈴木麗璽，小島諒介，中臺一博: 第43回AIチャレンジ研究会優秀賞</li>
+<li>小島諒介，杉山治, 中臺一博: SI 2014 優秀講演者賞</li>
 </ul>
 </div>
 </div>
@@ -1962,6 +1965,7 @@ publisher = {日本ロボット学会}
 
 		
 		// lecture
+		$('#bibtex_display_lecture').hide();
 		$('#lecture').find('h4').click(function () {
 			$(this).toggleClass('active');
 			$('#bibtex_display_lecture').slideToggle('slow');
