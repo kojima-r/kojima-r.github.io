@@ -398,7 +398,37 @@ if (typeof jQuery == 'undefined') {
     if ($(".bibtex_template").size() == 0) {
       $("body").append("<div class=\"bibtex_template\"><div class=\"if author\" style=\"font-weight: bold;\">\n  <span class=\"if year\">\n    <span class=\"year\"></span>, \n  </span>\n  <span class=\"author\"></span>\n  <span class=\"if url\" style=\"margin-left: 20px\">\n    <a class=\"url\" style=\"color:black; font-size:10px\">(view online)</a>\n  </span>\n</div>\n<div style=\"margin-left: 10px; margin-bottom:5px;\">\n  <span class=\"title\"></span>\n</div></div>");
     }
-    bibtex_js_draw();
+    loadBibtexSources(bibtex_js_draw);
+  });
+}
+
+// Each publication section's BibTeX lives in an external file, named by the
+// textarea's data-bibtex-src attribute. Load them all, drop each response into
+// its textarea, then hand off to callback so bibtex_js_draw() can read the
+// values with .val() exactly as it did when the BibTeX was inline.
+function loadBibtexSources(callback) {
+  var targets = $("textarea[data-bibtex-src]");
+  var pending = targets.size();
+  if (pending == 0) {
+    callback();
+    return;
+  }
+  targets.each(function () {
+    var textarea = $(this);
+    var url = textarea.attr("data-bibtex-src");
+    $.ajax({url: url, dataType: "text"})
+      .done(function (text) {
+        textarea.val(text);
+      })
+      .fail(function (xhr, status) {
+        console.log("failed loading " + url + ": " + status);
+      })
+      .always(function () {
+        pending -= 1;
+        if (pending == 0) {
+          callback();
+        }
+      });
   });
 }
 
