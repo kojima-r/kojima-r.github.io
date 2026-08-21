@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" href="assets/ico/favicon.png">
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		
+		<link href="assets/css/main.css" rel="stylesheet">
+		
+<!-- ここを自分の名前に置き換えよう -->
+		<title>CV</title>
+<!-- ここまで -->
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+			}
+			.container-fluid > .content{
+				margin-left:0px;
+			}
+			.categories li{
+				
+			}
+			.categories li:focus{
+				
+			}
+			#main-items tbody tr td{
+				cursor:pointer !important;
+			}
+			.highlight td{
+				font-weight:bold;
+			}
+			td.mini-thumbnail img{
+				max-height:50px;
+				max-width:100px;
+			}
+			td.mini-thumbnail{
+				text-align:center;
+			}
+			/* active */
+			.other_box h4 {
+				border-bottom: 3px solid #888;
+			}
+			.other_box h4.active .header{
+				width: 0;
+				height: 0;
+				margin-top:6px;
+				margin-right:6px;
+				margin-left:0px;
+				/* === active marker (from) === */
+				border: 6px solid transparent;
+				border-top: 6px solid #111;
+				/* === active marker (to) === */
+				float:left;
+			}
+			.other_box h4 .header{
+				width: 0;
+				height: 0;
+				margin-top:3px;
+				margin-right:3px;
+				margin-left:3px;
+				/* === active marker (from) === */
+				border: 6px solid transparent;
+				border-left: 6px solid #111;
+				/* === active marker (to) === */
+				float:left;
+			}
+			.bib_box{
+				margin-left:30px;
+			}
+			.bib_item{
+			list-style-type: none;
+			margin-bottom : 10px;
+			}
+			dt{  
+				width : 50px;
+				float : left;
+				clear : both;
+			}
+
+			dd{    
+				margin-left : 60px;
+			}
+			.ref{
+				font-weight:bold;
+			}
+		</style>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	</head>
+
+	<body>
+		
+<h1> Publication list</h1>
+<div id="journal" class="other_box">
+<h4 class="active"><div class="header"></div>Journal</h4>
+<textarea id="bibtex_journal" data-bibtex-src="bib/journal.bib" style="display:none;"></textarea>
+<p id="bibtex_display_journal" class="text-left bib_box"></p>
+</div>
+
+<div id="conf" class="other_box">
+<h4 class="active"><div class="header"></div>International conference and workshop (first auther)</h4>
+<textarea id="bibtex_conf" data-bibtex-src="bib/conf.bib" style="display:none;"></textarea>
+<p id="bibtex_display_conf" class="text-left bib_box"></p>
+</div>
+
+<div id="lecture" class="other_box">
+<h4 class="active"><div class="header"></div>Invited talk</h4>
+<div id="bibtex_display_lecture" class="text-left bib_box">
+<ul>
+	<li>「確率論理プログラミング言語PRISMとその深層化T-PRISMの紹介」<br>
+<a href="https://sig-fpai.org/past/fpai111.html">人工知能学会 人工知能基本問題研究会 SIG-FPAI2020(2020年1月30日)</a></li>
+	<li>「深層学習と確率プログラミングを融合したEdwardについて」<br>
+<a href="http://www.airc.aist.go.jp/seminar_detail/seminar_017a.html">産総研AIRC第１７回人工知能セミナー:確率プログラミングの世界：論理と確率をつなぐ人工知能(2017年10月18日)</a><br>
+Slide: <a href="https://www.slideshare.net/ryosuke-kojima/edward-80980204">https://www.slideshare.net/ryosuke-kojima/edward-80980204</a></li>
+	<li>「医療・創薬応用における解釈容易なモデル開発の取り組みの紹介」<br>
+<a href="https://www.jsbi.org/news/workshops/20191018-kansai/">第27回バイオメディカル研究会（関西地域部会）
+「ライフサイエンスで求められる説明可能なAI」(2019年10月18日)</a></li>
+	<li>「多様な医療データ活用のための機械学習技術」<br>
+<a href="https://www.kuhp.kyoto-u.ac.jp/~kmi/kiroku/2020.html">	KMI第61回例会・日本医療情報学会関西支部第1回講演会（合同開催）(2020年5月9日)</a></li>
+	
+	<li>「グラフニュートラルネットワークを用いた創薬・医療のためのAI基盤」<br>
+<a href="http://omics.jp/%e3%80%8c%e6%97%a5%e6%9c%ac%e3%82%aa%e3%83%9f%e3%83%83%e3%82%af%e3%82%b9%e5%8c%bb%e5%ad%a6%e4%bc%9a%e3%82%b7%e3%83%b3%e3%83%9d%e3%82%b8%e3%82%a6%e3%83%a0%e3%80%8d%e3%83%86%e3%83%bc%e3%83%9e%e3%80%8cai">日本オミックス医学会シンポジウム「AI創薬の最新の展開」(2022年9月6日)</a></li>
+	<li>「深層状態空間モデルの変分推論を用いた医療データ解析」<br>
+<a href="https://confit.atlas.jp/guide/event/jfssa2022/session/2A06-10/tables?GAaBDrkvEV">2022年度統計関連学会連合大会 (2022年9月5日)</a></li>
+	<li>「グラフニューラルネットワークを用いた医療関連データ処理」<br>
+	<a href="https://cbi-society.org/taikai/taikai22/program.html"> 情報計算化学生物 (CBI)学会 2021年大会医療データAI解析実践フォーラム（2021年10月26日）</a></li>
+	<li>「多様な医療関連データへのグラフニューラルネットワークの応用」<br>
+	<a href="https://cbi-society.org/taikai/taikai22/program.html"> 情報計算化学生物 (CBI)学会 2022年大会医療データAI解析実践フォーラム（2022年10月25日）</a></li>
+	<li>「グラフ深層学習を用いた有機合成のためのAI基盤」<br>
+	<a href="https://www.ssocj.jp/event/20230621_aib11/"> 「AIと有機合成化学」第11回勉強会（2023年 6月21日）</a></li>
+	<li>「有機化学のための深層学習ベースのAI基盤と基盤モデル」<br>
+	<a href="https://kinka.or.jp/event/2023/wakate_n6.html"> 第6回近化若手フォーラム（2023年 8月31日）</a></li>
+	<li>「大規模グラフニューラルネットワークに基づく多様な医療関連データ解析」<br>
+	<a href="https://cbi-society.org/taikai/taikai22/program.html"> 情報計算化学生物 (CBI)学会 2023年大会医療データAI解析実践フォーラム（2023年10月25日）</a></li>
+	<li>「有機化学反応のためのAI基盤モデルの開発」<br>
+	<a href="https://irc3.aist.go.jp/event/post-41587/">第5回産総研化学研究シンポジウム「デジタル化社会における化学研究の多様性」（2023年11月17日）</a></li>
+	<li>「データ駆動型逆合成経路解析・反応予測基盤モデルの開発」<br>
+	<a href="https://pub.confit.atlas.jp/ja/event/csj104th/session/1A143201-03">日本化学会第104春季年会（2024年3月18日）</a></li>
+	<li>「医療AI基盤と事前知識を導入した深層時系列モデル学習手法」<br>
+	<a href="https://pub.confit.atlas.jp/ja/event/jsmb2024/content/plansympo">S2: 「数理医学 in Mathematical Biology」2024年度日本数理生物学会年会（2024年9月11日）</a></li>
+	<li>「Federated Learning の紹介～製薬企業間グラフ連合学習に向けて～」<br>
+	<a href="https://cbi-society.org/taikai/taikai24/index.html">CBI学会2024年大会スポンサードシンポジウム「LINCが目指す創薬DXプラットフォーム」（2024/10/30）</a>
+	<li>「有機合成のデジタル化に向けたデータ駆動反応予測AI基盤の開発」<br>
+	<a href="https://cbi-society.org/taikai/taikai24/index.html">CBI学会2024年大会スポンサードシンポジウム SP01『学術変革領域研究（A）天然物が織り成す化合物潜在空間が拓く生物活性分子デザイン』</a></li>		
+	<li>「マルチモーダル生体分子基盤モデルの構築に向けて」<br>
+		<a href="https://www.ceatec.com/2024/ja/conference/detail.html?id=2799">CEATEC2024　25周年特別企画　AI for All　理研の「AI for Science」取り組み最前線(2024/10/18)</a></li>
+	<li>「深層状態空間モデルを用いた医療リアルワールドデータ解析」<br>
+	<a href="https://q-bio.jp/index.php?title=Caravan_2025#%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B32%E3%80%8C%E7%94%9F%E5%91%BD%E3%82%92%E8%A7%A3%E3%81%8F%EF%BD%9E%E8%A7%A3%E6%9E%90%EF%BD%9E%E3%80%8D">定量生物学の会　九州キャラバン2025(2025/1/11)</a></li>
+	<li>「グラフニューラルネットワークベースのマルチモーダル予測モデルを用いた医療・創薬応用の紹介」<br>
+		<a href="https://www.city.kobe.lg.jp/a89323/press-iryosangyo/202410/911559209200.html">第2回KBIC FORUM “内耳再生プロジェクト Kick-Off シンポジウム”(2025/4/25)</a></li>
+	<li>
+		<a href="https://biosciencedbc.jp/event/symposium/togo2025/">”トーゴーの日シンポジウム2025「マルチモーダルデータ×AI」(2025/10/20)</a></li>
+	<li>「マルチモーダルAI基盤技術と生命科学におけるその応用」<br>
+		<a href="https://www.tmd.ac.jp/tmd-research/rikensympo/">理化学研究所×東京科学大学　連携シンポジウム”(2025/12/9)</a></li>
+	<li>「Development of Multimodal AI Frameworks and Foundation Models in Life Sciences」<br>
+		<a href="https://wahibium.github.io/advancing-science-through-ai/">Advancing Science through AI, a workshop co-held  with SCA/HPCAsia'26 Conference”(2026/01/26)</a></li>
+	<li>「AI・機械学習が変革するデータ駆動型創薬・医療：分子設計から臨床予測まで」<br>
+		<a href="https://sites.google.com/cbi-society.net/medai/">医療データAI解析実践研究会 第6回研究会(2026/03/13)</a></li>
+	<li>「生命科学におけるマルチモーダル基盤モデル開発と研究自動化に向けた取り組み」<br>
+		<a href="https://laboratoryautomation.connpass.com/event/388688/">Laboratory Automation月例勉強会(2026/04/24)</a></li>
+	<li>「Deep State-Space Modeling for Real-World Biomedical Time-Series Analysis」<br>
+		<a href="https://ecmtb2026.org/contributions/minisymposia/ms91">SMB/ECMTB2026「Data Science × Mathematical Modeling for Transforming Quantitative Life and Medical Sciences」(2026/07/16)</a></li>
+	<li>「生命科学におけるマルチモーダル基盤モデル開発と研究自動化に向けた取り組み」<br>
+		<a href="https://ladec2026.lasa.or.jp/program/#session-foundation-models">LADAC2026「【基盤モデル】AI for Scienceを支える科学基盤モデル」(2026/07/26)</a></li>
+	<li>「生命科学におけるマルチモーダル基盤モデルの開発」<br>
+		<a href="https://cbi-society.org/home/documents/seminar/2025to29/20260819.html">第474回CBI学会講演会「AI創薬フロンティア：基盤モデル・構造科学・分子設計が拓く新時代」(2026/08/19)</a></li>
+	</ul>
+
+	</div>
+</div>
+
+
+
+<div id="conf2" class="other_box">
+<h4 class="active"><div class="header"></div>International conference and workshop (co-auther)</h4>
+<textarea id="bibtex_conf2" data-bibtex-src="bib/conf2.bib" style="display:none;"></textarea>
+<p id="bibtex_display_conf2" class="text-left bib_box"></p>
+</div>
+
+<div id="meeting" class="other_box">
+<h4 class="active"><div class="header"></div>Domestic conference (first author)</h4>
+<textarea id="bibtex_meeting" data-bibtex-src="bib/meeting.bib" style="display:none;"></textarea>
+<p id="bibtex_display_meeting" class="text-left bib_box"></p>
+</div>
+
+<div id="meeting2" class="other_box">
+<h4 class="active"><div class="header"></div>Domestic conference (co-author)</h4>
+<textarea id="bibtex_meeting2" data-bibtex-src="bib/meeting2.bib" style="display:none;"></textarea>
+<p id="bibtex_display_meeting2" class="text-left bib_box"></p>
+</div>
+
+
+<div id="other_article" class="other_box">
+<h4 class="active"><div class="header"></div>Book chapter/review article</h4>
+<textarea id="bibtex_other_article" data-bibtex-src="bib/other_article.bib" style="display:none;"></textarea>
+<p id="bibtex_display_other_article" class="text-left bib_box"></p>
+</div>
+
+<div id="patent" class="other_box">
+<h4 class="active"><div class="header"></div>Patent</h4>
+<div id="bibtex_display_patent" class="text-left bib_box">
+	<ul>
+	<li>小島 諒介，中臺一博: “環境理解装置および環境理解方法”特開2016-51052</li>
+	</ul>
+</div>
+</div>
+
+<div id="award" class="other_box">
+<h4 class="active"><div class="header"></div>Award</h4>
+<div id="bibtex_display_award" class="text-left bib_box">
+<ul>
+<li>小島諒介，杉山治, 中臺一博: 第３３回日本ロボット学会研究奨励賞</li>
+<li>松林志保，鈴木麗璽，小島諒介，中臺一博: 第43回AIチャレンジ研究会優秀賞</li>
+<li>小島諒介，杉山治, 中臺一博: SI 2014 優秀講演者賞</li>
+<li>Kojima, R. and Sato, T.:ILP 2014 Best Student Paper runner-up</li>
+</ul>
+</div>
+</div>
+<!-- ここまで -->
+
+				<div class="bibtex_template">
+				<div class="bib_item">
+					<dt>[<span class="bib_id"></span>]</dt>
+						<dd>
+							<span class="if author"><span class="author"></span>:<br></span> 
+							<span class="title"></span>.<br>
+							<span class="if journal">In <span class="journal" style="font-style: italic;"></span>,</span> 
+							<span class="if howpublished"><span class="howpublished"></span>,</span> 
+							<span class="if booktitle"><span class="booktitle"></span>,</span> 
+							<span class="if publisher"><span class="publisher"></span>,</span> 
+							<span class="if school"><span class="school"></span></span> 
+							<span class="if volume">Vol. <span class="volume"></span>
+								<span class="if number">No. <span class="number"></span></span>
+								<span class="if pages">pp. <span class="pages"></span></span>,
+							</span> 
+							<span class="if edition"><span class="edition"></span> ed.,</span> 
+							<span class="if year"><span class="if month"><span class="month"></span>,</span>
+							<span class="year"></span>.<br></span>
+							<span class="if url"><a class="url"><span class="url"></span></a><br></span>
+							<span class="if draft">Draft/PDF: <a class="draft"><span class="draft"></span></a><br></span>
+							<span class="if slide">Slide: <a class="slide"><span class="slide"></span></a><br></span>
+						</dd>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="assets/js/bibtex_js_kojima.js"></script>
+		<!--<link href="assets/css/font-awesome.min.css" rel="stylesheet">-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<script type="text/javascript">
+//Accordion
+(function($){
+	$(function(){
+		// journal
+		$('#journal').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_journal').slideToggle('slow');
+		});
+		$('#journal').find('h4').hover(function () {
+			$('#bibtex_display_journal').toggleClass('hovered');
+		});
+		// conf
+		$('#conf').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_conf').slideToggle('slow');
+		});
+		$('#conf').find('h4').hover(function () {
+			$('#bibtex_display_conf').toggleClass('hovered');
+		});
+		// lecture
+		$('#lecture').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_lecture').slideToggle('slow');
+		});
+		$('#lecture').find('h4').hover(function () {
+			$('#bibtex_display_lecture').toggleClass('hovered');
+		});
+		
+		// conf2
+		$('#bibtex_display_conf2').hide();
+		$('#conf2').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_conf2').slideToggle('slow');
+		});
+		$('#conf2').find('h4').hover(function () {
+			$('#bibtex_display_conf2').toggleClass('hovered');
+		});
+		
+		// meeting
+		$('#bibtex_display_meeting').hide();
+		$('#meeting').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_meeting').slideToggle('slow');
+		});
+		$('#meeting').find('h4').hover(function () {
+			$('#bibtex_display_meeting').toggleClass('hovered');
+		});
+		// meeting2
+		$('#bibtex_display_meeting2').hide();
+		$('#meeting2').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_meeting2').slideToggle('slow');
+		});
+		$('#meeting2').find('h4').hover(function () {
+			$('#bibtex_display_meeting2').toggleClass('hovered');
+		});
+		// other_article
+		$('#bibtex_display_other_article').hide();
+		$('#other_article').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_other_article').slideToggle('slow');
+		});
+		$('#other_article').find('h4').hover(function () {
+			$('#bibtex_display_other_article').toggleClass('hovered');
+		});
+		// patent
+		$('#bibtex_display_patent').hide();
+		$('#patent').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_patent').slideToggle('slow');
+		});
+		$('#patent').find('h4').hover(function () {
+			$('#bibtex_display_patent').toggleClass('hovered');
+		});
+		// award
+		$('#bibtex_display_award').hide();
+		$('#award').find('h4').click(function () {
+			$(this).toggleClass('active');
+			$('#bibtex_display_award').slideToggle('slow');
+		});
+		$('#award').find('h4').hover(function () {
+			$('#bibtex_display_award').toggleClass('hovered');
+		});
+	});
+
+})(jQuery);
+</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
